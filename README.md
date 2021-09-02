@@ -1,28 +1,27 @@
-## TBD [Spring Portfolio Starter](https://nighthawkcodingsociety.com/projectsearch/details/Spring%20Portfolio%20Starter)
-Runtime link: TBD https://jportfolio.nighthawkcodingsociety.com/
+# Donut Dictionary
+#### Created by the m222-krustykrabs.
+
+"CODE CODE CODE!"
+
+### Description:
+Donut Dictionary is a Donut Rating Site which allows any users to view, search, and create reviews for donuts. Fan Favorites and the Least-Liked List are displayed on the home page to see the highest reviewed donuts and the worst reviewed donuts! You are able to not only score the donuts on a 5-star scale but also write comments that other users can see!
+
+### [Wireframe](https://docs.google.com/presentation/d/1F2H328ZCYhyjzBX2WUQdiGw8LLIWjOHupeIna6I-y7w/edit?usp=sharing)
+
+### Table of Collaborators
+|        Name        | Github Username   |
+|:------------------:|-------------------|
+| Kevin Do           | kevin-dough       |
+| Ak Prathipati      | akprathipati      |
+| Eshaan Parlikar    | KrispyKremeSavage |
+| Navodit Maheshwari | Navodit1603      |
 
 
+Our goal is to create a deliverable that is practical and beneficial to be used by clients.
 
-## Visual thoughts
-#### * Starter code should be fun and practical
-#### * Organize with Bootstrap menu 
-#### * Add some color and fun through VANTA Visuals (birds, halo, solar, net)
-#### * Show some practical and fun links (hrefs) like Twitter, Git, Youtube
-#### * Show student project specific links (hrefs) per page
-#### * Show student TPT ideas
-#### * Show student About me pages
+### Journals
+[Ak and Eshaan's Journal](https://docs.google.com/document/d/1_00m8_Ps-8xa50mRHRDDZVe1lTe19DJE-vb_fP_6JeY/edit?usp=sharing) 
 
+[Kevin and Navodit's Journal](https://docs.google.com/document/d/1BFBWGY9vj-E2K7aB7S8AUBSUFzykGWVdO7xCJWG-ou0/edit?usp=sharing) 
 
-
-## Getting started
-#### * Clone project to IntelliJ
-#### * Verify Project Structure to use a good Java JDK (adopt-openJ9-15) 
-#### * Play or entry point is Main.java, look for play option in tray.  This file eanbles Spring to load
-#### * Java source (src/main/java) had Java files.  Find "controllers" path, these files enable HTTP route and HTML file relationship.  Note, html 
-#### * HTML source (src/main/resources) had templates and supporting files.  Find index.html as this file is launched by defaul in Spring.  Other HTML files are loaded by building a "@Controller"
-
-
-
-## IDE management
-#### * A ".gitignore" can teach a Developer a lot about Java runtime.  A target directory is created when you press play button, byte code is generated and files are moved into this location.
-#### * A "pom.xml" file can teach you a lot about Java dependencies.  This is similar to "requirements.txt" file in Python.  It manages packages and dependencies.
+[Project Plan](https://docs.google.com/document/d/14fl5IbjiwnolH_P-Ar1aMBShLUp5B-C5qtU6SHZzows/edit)
