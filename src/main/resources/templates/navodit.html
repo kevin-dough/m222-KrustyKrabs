@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!DOCTYPE HTML>
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{birds}" lang="en">
+
+<head><div layout:fragment="content" th:remove="tag">
+
+    <title>Navodit Greet!</title>
+
+</div></head>
+
+<body><div layout:fragment="content" th:remove="tag">
+
+    <div class="contact" style="height: 35vh;">
+        <div class="row justify-content-left" style="margin: 2%;">
+            <form action="/navodit" method="GET" id="greetForm">
+                <div>
+                    <label for="greetField" style="color: white">What's your name?</label>
+                    <input name="name" id="greetField">
+                    <button>This is me!</button>
+                    <p style="color: white" th:text="'Hey there ' + ${name} + '!'"></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div></body>
+
+</html>
