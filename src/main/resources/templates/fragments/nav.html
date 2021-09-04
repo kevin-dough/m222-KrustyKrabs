@@ -5,7 +5,7 @@
 </head>
 <body>
     <!-- Begin navigation fragments -->
-    <nav class="navbar navbar-expand-lg" style="background-color:#ff5bff; overflow:hidden;min-width:100%;z-index:100" th:fragment="header">
+    <nav class="navbar navbar-expand-lg" style="background-color:#ff5bff;min-width:100%;z-index:100" th:fragment="header">
         <a class="navbar-brand" style="font-family:'Luckiest Guy'; color:white; font-size:2em;text-shadow:0px 0px 5px black" href="/">
             <img src="/static/images/ncs_logo.png" th:src="@{/images/donut.png}" width="50" height="50" class="d-inline-block align-center" alt="">
             DONUT DICTIONARY
@@ -17,13 +17,21 @@
         <div class="collapse navbar-collapse w-100 order-3 dual-collapse2" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link navbarLink py-0" style="text-shadow: 0px 0px 5px black;" href="/">DONUTS</a>
+                    <a class="nav-link navbarLink py-0" style="text-shadow: 0px 0px 5px black;margin-top:8px" href="/">DONUTS</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle navbarLink" style="text-shadow: 0px 0px 5px black" href="#" id="navbarMINILABS" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        MINILABS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" style="color:black" href="/kevin">Kevin</a>
+                        <a class="dropdown-item" style="color:black" href="/ak">Ak</a>
+                        <a class="dropdown-item" style="color:black" href="/navodit">Navodit</a>
+                        <a class="dropdown-item" style="color:black" href="/eshaan">Eshaan</a>
+                    </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navbarLink py-0" style="text-shadow: 0px 0px 5px black;" href="/minilabs">MINILABS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link navbarLink py-0" style="text-shadow: 0px 0px 5px black;" href="/about">ABOUT</a>
+                    <a class="nav-link navbarLink py-0" style="text-shadow: 0px 0px 5px black;;margin-top:8px" href="/about">ABOUT</a>
                 </li>
             </ul>
 
