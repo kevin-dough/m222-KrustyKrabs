@@ -8,11 +8,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <!-- font -->
         <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cambria" rel="stylesheet">
 
         <!-- styles css -->
-        <link rel="stylesheet" href="/static/css/styles.css" type="text/css">
+        <link href="../static/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet" />
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -30,13 +34,9 @@
         <!-- Common style for site -->
         <style>
             :root{
-                --yellow: #f1d483;
-                --green: #9daf9b;
-                --purple: #a59aaf;
-                --lblue: #6084a3;
-                --dblue: #2b425b;
-                --white: whitesmoke;
-                --black: black;
+                --tan: #ffedc8;
+                --blue: #5bcdff;
+                --pink: #ff5bff;
                 --grey: #434343;
             }
 
@@ -118,13 +118,6 @@
             a:hover, a:active {
                 color: white;
                 text-decoration: none;
-            }
-
-            .navbarLink {
-                font-family:'Luckiest Guy';
-                color:white;
-                font-size:1.5em;
-                text-shadow: 0px 0px 5px black;
             }
 
         </style>
