@@ -19,7 +19,7 @@
         const MSG_ON = "Turn on";
         const IMAGE_ON = "/images/chocglaze.png";
         const MSG_OFF = "Turn off";
-        const IMAGE_OFF = "/images/jelly-donut.png"
+        const IMAGE_OFF = "/images/jelly.png"
 
         // return string with current value of each bit
         function getBits() {
@@ -140,7 +140,7 @@
 
                     <tr>
                         <th:block th:each="i: ${#numbers.sequence(0, bits-1)}">
-                            <td><img class="img-responsive py-3" th:id="'bulb' + ${i}" src="" th:src="@{'/images/jelly-donut.png'}" alt="" width="40" height="Auto">
+                            <td><img class="img-responsive py-3" th:id="'bulb' + ${i}" src="" th:src="@{'/images/jelly.png'}" alt="" width="40" height="Auto">
                                 <button type="button" th:id="'butt' + ${i}" th:onclick="'javascript:toggleBit(' + ${i} + ')'">Turn on</button>
                             </td>
                         </th:block>
