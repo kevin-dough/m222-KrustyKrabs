@@ -24,9 +24,9 @@ public class ContactController {
     {
 
         Contact cont1=new Contact("Eshaan","Parlikar","(858)705-3900","parlikareshaan@gmail.com");
-        Contact cont2=new Contact("Eshaan","Parlikar","(858)705-3900","parlikareshaan@gmail.com");
-        Contact cont3=new Contact("Eshaan","Parlikar","(858)705-3900","parlikareshaan@gmail.com");
-        Contact cont4=new Contact("Eshaan","Parlikar","(858)705-3900","parlikareshaan@gmail.com");
+        Contact cont2=new Contact("Navodit","Maheshwari","(858)216-5147","navoditmaheshwari@gmail.com");
+        Contact cont3=new Contact("Ak","Prathipati","(858)213-8198","akprathipati@gmail.com");
+        Contact cont4=new Contact("Kevin","Do","(858)381-7563","kevin12345do@gmail.com");
 
         listContacts=new ArrayList<>();
 

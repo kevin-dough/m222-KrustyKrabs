@@ -1,31 +1,43 @@
-<!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-  <head>
-    <title>Contact Directory</title>
+<!-- This page is illustrative and contains ideas about HTML formatting -->
+<!DOCTYPE HTML>
+<!-- Signals to the Layout Dialect which layout should be used to decorate this View -->
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layout}" lang="en">
 
-  </head>
-  <body>
-    <h3>Contact Directory</h3>
+<head>
+    <div layout:fragment="metadata" th:remove="tag">
+        <title>Donut Dictionary</title>
+    </div>
+</head>
+
+<!-- layout::fragment="content" is heart of ThymeLeaf layout -->
+<body>
+<div layout:fragment="content" th:remove="tag">
+    <!-- Start of body content specific to page --><!DOCTYPE html>
+    <div style="padding-top:10px;padding-left:10px">
+    <h3 class="cardTitle">Contact Directory</h3>
     <hr>
-      <table border="1">
+    <table border="1">
         <thead>
-          <tr>
-            <th>FirstName</th>
-            <th>LastName</th>
-            <th>PhoneNumber</th>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Phone Number</th>
             <th>Email</th>
-          </tr>
+        </tr>
         </thead>
         <tbody>
-          <tr th:each="tempContacts:${contacts}">
+        <tr th:each="tempContacts:${contacts}">
             <td th:text="${tempContacts.firstName}"></td>
             <td th:text="${tempContacts.lastName}"></td>
             <td th:text="${tempContacts.phoneNumber}"></td>
             <td th:text="${tempContacts.email}"></td>
-          </tr>
+        </tr>
 
 
         </tbody>
-</table>
+    </table>
+    </div>
+</div>
 </body>
 </html>
