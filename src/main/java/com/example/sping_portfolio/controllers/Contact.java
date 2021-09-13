@@ -28,14 +28,14 @@ public class Contact {
     }
 
     public String getLastName() {
-        return firstName;
+        return lastName;
     }
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    public String getPhoneNumber(String phoneNumber) {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
@@ -44,7 +44,7 @@ public class Contact {
     }
 
     public String getEmail() {
-        return firstName;
+        return email;
     }
 
     public void setEmail(String email) {
