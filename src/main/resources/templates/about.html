@@ -11,20 +11,32 @@
 <!-- layout::fragment="content" is heart of ThymeLeaf layout -->
 <body><div layout:fragment="content" th:remove="tag">
     <!-- Start of body content specific to page -->
-    <div style="padding-top:10%"></div>
-    <center>
-        <div class="row justify-content-around">
-            <div class="aboutCard" th:each="name : ${name}">
-                <img src="/static/images/donut.png" th:src="@{/images/donut.png}" width="250" height="250">
-                <h1  style="margin-top:10px" class="aboutName" th:utext="${name}">..</h1>
-                <p class="aboutDonut">donut</p>
-    <!--            <p th:utext="${donut}">..</p>-->
-            </div>
-        </div>
-    </center>
-
-
+    Hello, World!
+    About page.
     <!-- End of body content specific to page -->
+    <section>
+        <h1>Ak</h1>
+        <p>Ak was here</p>
+    </section>
+
+    <section>
+        <h1>Eshaan</h1>
+        <p>Eshaan was here</p>
+    </section>
+    <section>
+        <h1>Navodit</h1>
+        <p>Navodit was here</p>
+    </section>
+
+    <section>
+        <h1>Kevin </h1>
+        <p>Kevin was here</p>
+    </section>
+
+
+</html>
+
+
 </div></body>
 
 </html>
