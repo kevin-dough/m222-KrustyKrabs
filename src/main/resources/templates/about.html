@@ -11,33 +11,20 @@
 <!-- layout::fragment="content" is heart of ThymeLeaf layout -->
 <body><div layout:fragment="content" th:remove="tag">
     <!-- Start of body content specific to page -->
-    <!-- This page is illustrative and contains ideas about HTML formatting -->
-    <!DOCTYPE HTML>
-    <!-- Signals to the Layout Dialect which layout should be used to decorate this View -->
-    <html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
-          layout:decorate="~{layout}" lang="en">
-
-    <head><div layout:fragment="metadata" th:remove="tag">
-        <title>About</title>
-    </div></head>
-
-    <!-- layout::fragment="content" is heart of ThymeLeaf layout -->
-    <body><div layout:fragment="content" th:remove="tag">
-        <!-- Start of body content specific to page -->
-        <div style="padding-top:10%"></div>
-        <center>
-            <div class="row justify-content-around">
-                <div class="aboutCard" th:each="name : ${name}">
-                    <img src="/static/images/donut.png" th:src="@{/images/donut.png}" width="250" height="250">
-                    <h1  style="margin-top:10px" class="aboutName" th:utext="${name}">..</h1>
-                    <p class="aboutDonut">donut</p>
-                    <!--            <p th:utext="${donut}">..</p>-->
-                </div>
+    <div style="padding-top:10%"></div>
+    <center>
+        <div class="row justify-content-around">
+            <div class="aboutCard" th:each="name : ${name}">
+                <img src="/static/images/donut.png" th:src="@{/images/donut.png}" width="250" height="250">
+                <h1  style="margin-top:10px" class="aboutName" th:utext="${name}">..</h1>
+                <p class="aboutDonut">donut</p>
+                <!--            <p th:utext="${donut}">..</p>-->
             </div>
-        </center>
+        </div>
+    </center>
 
 
-        <!-- End of body content specific to page -->
-    </div></body>
+    <!-- End of body content specific to page -->
+</div></body>
 
-    </html>
+</html>
