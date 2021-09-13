@@ -91,3 +91,23 @@ body::-webkit-scrollbar-thumb {
     border: 5px solid transparent;
     background-clip: content-box;
 }
+
+.aboutCard {
+    background-color: var(--tan);
+    padding: 15px;
+    width: 300px;
+}
+
+.aboutName {
+    font-family:'Luckiest Guy';
+    color: white;
+    font-size: 2em;
+    text-shadow: 0px 0px 5px black;
+    overflow-wrap: break-word;
+}
+
+.aboutDonut {
+    font-family:'Cambria';
+    color: var(--blue);
+    font-size: 1.5em;
+}
