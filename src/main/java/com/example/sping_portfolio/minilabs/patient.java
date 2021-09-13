@@ -1,14 +1,14 @@
 package com.example.sping_portfolio.minilabs;
 
 public class patient {
-    private boolean isSick;
+    private boolean needssurgery;
     private int age;
     private boolean hasHealthInsurance;
     private String name;
     private String emergencyContact;
 
-    public patient(boolean isSick, boolean hasHealthInsurance, int age, String name, String emergencyContact) {
-        isSick = isSick;
+    public patient(boolean needssurgery, boolean hasHealthInsurance, int age, String name, String emergencyContact) {
+        needssurgery = needssurgery;
         hasHealthInsurance = hasHealthInsurance;
         age = age;
         name = name;
@@ -16,7 +16,7 @@ public class patient {
     }
 
     public boolean willTreat() {
-        if (isSick && !hasHealthInsurance) {
+        if (needssurgery && !hasHealthInsurance) {
             return false;
         }
         else {
