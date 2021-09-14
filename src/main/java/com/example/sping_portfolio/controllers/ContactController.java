@@ -22,7 +22,7 @@ public class ContactController {
     @PostConstruct
     private void loadData()
     {
-
+    //create an object by creating an instance in the class
         Contact cont1=new Contact("Eshaan","Parlikar","(858)705-3900","parlikareshaan@gmail.com");
         Contact cont2=new Contact("Navodit","Maheshwari","(858)216-5147","navoditmaheshwari@gmail.com");
         Contact cont3=new Contact("Ak","Prathipati","(858)213-8198","akprathipati@gmail.com");

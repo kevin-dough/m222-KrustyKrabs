@@ -1,7 +1,7 @@
 package com.example.sping_portfolio.controllers;
 
 public class Contact {
-
+//created private methods in Contact class
     private String firstName;
     private String lastName;
     private String phoneNumber;
@@ -13,6 +13,7 @@ public class Contact {
     }
 
     public Contact(String firstName, String lastName, String phoneNumber, String email) {
+    //create an attribute
         this.firstName = firstName;
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
