@@ -12,6 +12,9 @@ Donut Dictionary is a Donut Rating Site which allows any users to view, search, 
 |[index page](https://github.com/Navodit1603/m222-KrustyKrabs/issues/13)|Kevin|created 2 horizontal scroll menus|
 |[about page](https://github.com/Navodit1603/m222-KrustyKrabs/issues/14)|Kevin|created a basic loop with thymeleaf, trouble with using multiple variables|
 |[contact list](https://github.com/Navodit1603/m222-KrustyKrabs/issues/16)|Eshaan and Kevin|used private methods and getters in the java; implementation of thymeleaf fragments|
+|[Mini Lab(hackathon)](https://github.com/Navodit1603/m222-KrustyKrabs/issues/16)|Ak and Eshaan|used classes and instance variables in a scario based event.|
+|[Averager(mean)](https://github.com/Navodit1603/m222-KrustyKrabs/issues/16)|Ak |used jave file to average the rating and give them an average rating and reccomending it|
+
 
 ### Pop Quiz!
 m222-KrustyKrabs, [scrumboard](https://github.com/Navodit1603/m222-KrustyKrabs/projects/1), [contributors](https://github.com/Navodit1603/m222-KrustyKrabs/graphs/contributors)
