@@ -22,15 +22,13 @@ m222-KrustyKrabs, [scrumboard](https://github.com/Navodit1603/m222-KrustyKrabs/p
 
 
 
-* Navodit Maheshwari, Navodit1603, ID: 54903217, [Tasks](https://github.com/Navodit1603/m222-KrustyKrabs/issues/assigned/Navodit1603), [Scrumboard](https://github.com/Navodit1603/m222-KrustyKrabs/projects/1?card_filter_query=assignee%3ANavodit1603), [commits](https://github.com/Navodit1603/m222-KrustyKrabs/commits?author=Navodit1603), [profile](https://github.com/Navodit1603)
-
-### Table of Collaborators
+### Pop Quiz
 |        Name        | Github Username   |ID                 |Tasks |Scrumboard |Commits |Profile |
 |:------------------:|-------------------|-------------------|------|-----------|--------|--------|
 | Kevin Do           | kevin-dough       |54718041| [Tasks](https://github.com/Navodit1603/m222-KrustyKrabs/issues/assigned/kevin-dough)|[Scrumboard](https://github.com/Navodit1603/m222-KrustyKrabs/projects/1?card_filter_query=assignee%3Akevin-dough)|[commits](https://github.com/Navodit1603/m222-KrustyKrabs/commits?author=kevin-dough)|[profile](https://github.com/kevin-dough)|
 | Ak Prathipati      | akprathipati      |54961927|[Tasks](https://github.com/Navodit1603/m222-KrustyKrabs/issues/assigned/akprathipati)|[Scrumboard](https://github.com/Navodit1603/m222-KrustyKrabs/projects/1?card_filter_query=assignee%3Aakprathipati)|[commits](https://github.com/Navodit1603/m222-KrustyKrabs/commits?author=akprathipati)|[profile](https://github.com/akprathipati)|
 | Eshaan Parlikar    | KrispyKremeSavage |32022538|[Tasks](https://github.com/Navodit1603/m222-KrustyKrabs/issues/assigned/KrispyKremeSavage)|[Scrumboard](https://github.com/Navodit1603/m222-KrustyKrabs/projects/1?card_filter_query=assignee%3AKrispyKremeSavage)|[commits](https://github.com/Navodit1603/m222-KrustyKrabs/commits?author=Navodit1603)|[profile](https://github.com/KrispyKremeSavage)|
-| Navodit Maheshwari | Navodit1603      |                    |      |           |        |        |
+| Navodit Maheshwari | Navodit1603|54903217|[Tasks](https://github.com/Navodit1603/m222-KrustyKrabs/issues/assigned/Navodit1603)|[Scrumboard](https://github.com/Navodit1603/m222-KrustyKrabs/projects/1?card_filter_query=assignee%3ANavodit1603)|[commits](https://github.com/Navodit1603/m222-KrustyKrabs/commits?author=Navodit1603)|[profile](https://github.com/Navodit1603)|
 
 
 
