@@ -6,6 +6,13 @@
 ### Description:
 Donut Dictionary is a Donut Rating Site which allows any users to view, search, and create reviews for donuts. Fan Favorites and the Least-Liked List are displayed on the home page to see the highest reviewed donuts and the worst reviewed donuts! You are able to not only score the donuts on a 5-star scale but also write comments that other users can see! The comments can be made anonymously or you can be names as well. There are algorithms that make this look like a professional website, as the the most popular will be features and the website will change throughout the day. This project is created in a presentatble manner. 
 
+### Sprint 9/13/2021
+|Issue|Asignee|Highlights|
+|:----:|:----:|:----:|
+|[index page](https://github.com/Navodit1603/m222-KrustyKrabs/issues/13)|Kevin|created 2 horizontal scroll menus|
+|[about page](https://github.com/Navodit1603/m222-KrustyKrabs/issues/14)|Kevin|created a basic loop with thymeleaf, trouble with using multiple variables|
+|[contact list](https://github.com/Navodit1603/m222-KrustyKrabs/issues/16)|Eshaan and Kevin|used private methods and getters in the java; implementation of thymeleaf fragments|
+
 ### Pop Quiz!
 m222-KrustyKrabs, [scrumboard](https://github.com/Navodit1603/m222-KrustyKrabs/projects/1), [contributors](https://github.com/Navodit1603/m222-KrustyKrabs/graphs/contributors)
 
