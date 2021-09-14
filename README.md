@@ -21,9 +21,20 @@ m222-KrustyKrabs, [scrumboard](https://github.com/Navodit1603/m222-KrustyKrabs/p
 [Ak and Eshaan](https://docs.google.com/document/d/1_00m8_Ps-8xa50mRHRDDZVe1lTe19DJE-vb_fP_6JeY/edit)
 
 * Kevin Do, kevin-dough, ID: 54718041, [Tasks](https://github.com/Navodit1603/m222-KrustyKrabs/issues/assigned/kevin-dough), [Scrumboard](https://github.com/Navodit1603/m222-KrustyKrabs/projects/1?card_filter_query=assignee%3Akevin-dough), [commits](https://github.com/Navodit1603/m222-KrustyKrabs/commits?author=kevin-dough), [profile](https://github.com/kevin-dough)
-* Navodit Maheshwari, Navodit1603, ID: 54903217, [Tasks](https://github.com/Navodit1603/m222-KrustyKrabs/issues/assigned/Navodit1603), [Scrumboard](https://github.com/Navodit1603/m222-KrustyKrabs/projects/1?card_filter_query=assignee%3ANavodit1603), [commits](https://github.com/Navodit1603/m222-KrustyKrabs/commits?author=Navodit1603), [profile](https://github.com/Navodit1603)
 * Ak Prathipati, akprathipati, ID: 54961927, [Tasks](https://github.com/Navodit1603/m222-KrustyKrabs/issues/assigned/akprathipati), [Scrumboard](https://github.com/Navodit1603/m222-KrustyKrabs/projects/1?card_filter_query=assignee%3Aakprathipati), [commits](https://github.com/Navodit1603/m222-KrustyKrabs/commits?author=akprathipati), [profile](https://github.com/akprathipati)
 * Eshaan Parlikar, KrispyKremeSavage, ID: 32022538, [Tasks](https://github.com/Navodit1603/m222-KrustyKrabs/issues/assigned/KrispyKremeSavage), [Scrumboard](https://github.com/Navodit1603/m222-KrustyKrabs/projects/1?card_filter_query=assignee%3AKrispyKremeSavage), [commits](https://github.com/Navodit1603/m222-KrustyKrabs/commits?author=KrispyKremeSavage), [profile](https://github.com/KrispyKremeSavage)
+* Navodit Maheshwari, Navodit1603, ID: 54903217, [Tasks](https://github.com/Navodit1603/m222-KrustyKrabs/issues/assigned/Navodit1603), [Scrumboard](https://github.com/Navodit1603/m222-KrustyKrabs/projects/1?card_filter_query=assignee%3ANavodit1603), [commits](https://github.com/Navodit1603/m222-KrustyKrabs/commits?author=Navodit1603), [profile](https://github.com/Navodit1603)
+
+### Table of Collaborators
+|        Name        | Github Username   |ID                 |Tasks |Scrumboard |Commits |Profile |
+|:------------------:|-------------------|-------------------|------|-----------|--------|--------|
+| Kevin Do           | kevin-dough       |54718041| [Tasks](https://github.com/Navodit1603/m222-KrustyKrabs/issues/assigned/kevin-dough)|[Scrumboard](https://github.com/Navodit1603/m222-KrustyKrabs/projects/1?card_filter_query=assignee%3Akevin-dough)|[commits](https://github.com/Navodit1603/m222-KrustyKrabs/commits?author=kevin-dough)|[profile](https://github.com/kevin-dough)|
+| Ak Prathipati      | akprathipati      |54961927|[Tasks](https://github.com/Navodit1603/m222-KrustyKrabs/issues/assigned/akprathipati)|[Scrumboard](https://github.com/Navodit1603/m222-KrustyKrabs/projects/1?card_filter_query=assignee%3Aakprathipati)|[commits](https://github.com/Navodit1603/m222-KrustyKrabs/commits?author=akprathipati)|[profile](https://github.com/akprathipati)|
+| Eshaan Parlikar    | KrispyKremeSavage |                   |      |           |        |        |
+| Navodit Maheshwari | Navodit1603      |                    |      |           |        |        |
+
+
+
 
 ### [Brain Write](https://docs.google.com/document/d/14fl5IbjiwnolH_P-Ar1aMBShLUp5B-C5qtU6SHZzows/edit#bookmark=id.hy068ml7j0yc)
 
