@@ -61,6 +61,12 @@ div::-webkit-scrollbar-thumb {
     object-fit: cover;
 }
 
+.imgStar {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
 .reviewScoreText {
     font-size:1em;
     font-family: Cambria;
@@ -112,11 +118,3 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.5em;
 }
 
-table,
-th,
-td {
-    padding: 10px;
-    border: 1px solid black;
-    border-collapse: collapse;
-    color:white;
-}
