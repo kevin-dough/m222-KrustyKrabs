@@ -61,6 +61,15 @@ div::-webkit-scrollbar-thumb {
     object-fit: cover;
 }
 
+.imgHomer{
+    width: 700px;
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 .imgStar {
     width: 20px;
     height: 20px;
