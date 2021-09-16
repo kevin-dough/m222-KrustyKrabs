@@ -14,11 +14,10 @@
     <div style="padding-top:10%"></div>
     <center>
         <div class="row justify-content-around">
-            <div class="aboutCard" th:each="name : ${name}">
+            <div class="aboutCard" th:each="about : ${about}">
                 <img src="/static/images/donut.png" th:src="@{/images/donut.png}" width="250" height="250">
-                <h1  style="margin-top:10px" class="aboutName" th:utext="${name}">..</h1>
-                <p class="aboutDonut">donut</p>
-                <!--            <p th:utext="${donut}">..</p>-->
+                <h1  style="margin-top:10px" class="aboutName" th:utext="${about.name}">..</h1>
+                <p class="aboutDonut" th:utext="${about.donut}">..</p>
             </div>
         </div>
     </center>
