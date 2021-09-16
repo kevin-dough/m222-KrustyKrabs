@@ -14,7 +14,6 @@ import com.example.sping_portfolio.controllers.Contact;
 
 @Controller
 
-@RequestMapping("/contacts")
 public class ContactController {
 
     private List<Contact> listContacts;
@@ -37,7 +36,7 @@ public class ContactController {
 
     }
 
-    @GetMapping("/contactlist")
+    @GetMapping("/contacts")
     public String showContacts(Model model)
     {
 
