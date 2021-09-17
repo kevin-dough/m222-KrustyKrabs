@@ -4,26 +4,39 @@
 <html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
       layout:decorate="~{layout}" lang="en">
 
-<head><div layout:fragment="metadata" th:remove="tag">
-    <title>About</title>
-</div></head>
+<head>
+    <div layout:fragment="metadata" th:remove="tag">
+        <title>About</title>
+    </div>
+</head>
 
 <!-- layout::fragment="content" is heart of ThymeLeaf layout -->
-<body><div layout:fragment="content" th:remove="tag">
+<body style="z-index:0">
+<div layout:fragment="content" th:remove="tag">
     <!-- Start of body content specific to page -->
-    <div style="padding-top:10%"></div>
-    <center>
-        <div class="row justify-content-around">
-            <div class="aboutCard" th:each="about : ${about}">
-                <img src="/static/images/donut.png" th:src="@{/images/donut.png}" width="250" height="250">
-                <h1  style="margin-top:10px" class="aboutName" th:utext="${about.name}">..</h1>
-                <p class="aboutDonut" th:utext="${about.donut}">..</p>
+    <div style="padding-top:5%"></div>
+    <h1 class="pageTitle">MEET THE TEAM</h1>
+    <div style="margin-top:150px;width:100%;z-index:2">
+        <div style="background-color:var(--pink); width:100%; height:60px"></div>
+        <div style="margin-top:10px; background-color:var(--blue); width:100%; height:60px"></div>
+    </div>
+    <div style="position:relative; z-index:3; bottom:25%">
+        <center>
+            <div class="row justify-content-around">
+                <div style="position:relative" class="aboutCard" th:each="about : ${about}">
+                    <img th:src="@{'/images/'+${about.name} + '.jfif'}" width="250" height="250">
+                    <h1 style="margin-top:10px" class="aboutName" th:utext="${about.name}">..</h1>
+                    <p class="aboutDonut" th:utext="${about.donut}">..</p>
+                    <div style="background-color:var(--pink); width:100%; height:10px"></div>
+                    <div style="margin-top:10px; background-color:var(--blue); width:100%; height:10px"></div>
+                </div>
             </div>
-        </div>
-    </center>
+        </center>
+    </div>
 
 
     <!-- End of body content specific to page -->
-</div></body>
+</div>
+</body>
 
 </html>

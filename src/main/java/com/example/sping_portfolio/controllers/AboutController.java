@@ -22,10 +22,10 @@ public class AboutController {
     private void loadData()
     {
         //create an object by creating an instance in the class
-        About person1=new About("Kevin","Cherry Glaze");
-        About person2=new About("Ak","Sugar Donut");
-        About person3=new About("Navodit","Original Glaze");
-        About person4=new About("Eshaan","Vanilla Sprinkle");
+        About person1=new About("kevin","Cherry Glaze");
+        About person2=new About("ak","Sugar Donut");
+        About person3=new About("navodit","Original Glaze");
+        About person4=new About("eshaan","Vanilla Sprinkle");
 
         listAbout=new ArrayList<>();
 
