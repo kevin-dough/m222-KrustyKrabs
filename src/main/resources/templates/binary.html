@@ -29,6 +29,15 @@
             }
             return bits;
         }
+
+        function checkChar(int) {
+            if (int >= 32 && int <= 126) {
+                return String.fromCharCode(int);
+            }
+            else {
+                return "None!";
+            }
+        }
         // setter for DOM values
         function setConversions(binary) {
             document.getElementById('binary').innerHTML = binary;
@@ -38,6 +47,8 @@
             document.getElementById('hexadecimal').innerHTML = parseInt(binary, 2).toString(16);
             // Decimal conversion
             document.getElementById('decimal').innerHTML = parseInt(binary, 2).toString();
+            // ASCII
+            document.getElementById('character').innerHTML = checkChar(parseInt(binary, 2));
         }
         //
         function decimal_2_base(decimal, base) {
@@ -122,15 +133,17 @@
                         <th>Octal</th>
                         <th>Hexadecimal</th>
                         <th>Decimal</th>
+                        <th>Character</th>
                         <th>Minus</th>
                     </tr>
                     <tr>
-                        <td><button type="button" id="add1" onclick="add(1)">+1</button></td>
+                        <td><button type="button" id="sub1" onclick="add(-1)">-1</button></td>
                         <td id="binary">00000000</td>
                         <td id="octal">0</td>
                         <td id="hexadecimal">0</td>
                         <td id="decimal">0</td>
-                        <td><button type="button" id="sub1" onclick="add(-1)">-1</button></td>
+                        <td id="character">None!</td>
+                        <td><button type="button" id="add1" onclick="add(1)">+1</button></td>
                     </tr>
                 </table>
             </div>
