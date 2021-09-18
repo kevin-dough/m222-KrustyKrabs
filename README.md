@@ -12,6 +12,7 @@ Donut Dictionary is a Donut Rating Site which allows any users to view, search, 
 |:----:|:----:|:----:|
 |[finish about page](https://github.com/Navodit1603/m222-KrustyKrabs/issues/20)|Kevin|created each loop and added more visuals|
 |[Demorgab Lab ](https://github.com/Navodit1603/m222-KrustyKrabs/issues/21)|AK|created lab on demorgan Law|
+Week 4 video: https://www.youtube.com/watch?v=JvT4FSaIfB4 
 
 ### Sprint 9/13/2021
 |Issue|Asignee|Highlights|
