@@ -1,0 +1,33 @@
+<!-- This page is illustrative and contains ideas about HTML formatting -->
+<!DOCTYPE HTML>
+<!-- Signals to the Layout Dialect which layout should be used to decorate this View -->
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layout}" lang="en">
+
+<head>
+  <div layout:fragment="metadata" th:remove="tag">
+    <title>Grayscale</title>
+  </div>
+</head>
+
+<!-- layout::fragment="content" is heart of ThymeLeaf layout -->
+<body style="z-index:0">
+<div layout:fragment="content" th:remove="tag">
+  <!-- Start of body content specific to page -->
+  <div style="padding-top:5%"></div>
+  <h1 class="pageTitle">GRAYSCALE WOW!</h1>
+  <div style="margin-top:15px">
+    <center>
+      <img src="/static/images/donut.png" th:src="@{/images/donut.png}" width="300px" height="300px">
+      <div>
+        <button class="listMenuTitle" style="border:none;background-color:var(--blue);margin-top:50px;padding:15px">GO GO GO!</button>
+      </div>
+    </center>
+  </div>
+
+
+  <!-- End of body content specific to page -->
+</div>
+</body>
+
+</html>
