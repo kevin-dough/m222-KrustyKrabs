@@ -1,4 +1,4 @@
-package com.example.sping_portfolio.controllers;
+package com.example.sping_portfolio.kevin;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,6 +12,6 @@ public class Kevin {
     public String greeting(@RequestParam(name="name", required=false, defaultValue="Kevin") String name, Model model) {
         // @RequestParam handles required and default values, name and model are class variables, model looking like JSON
         model.addAttribute("name", name); // MODEL is passed to html
-        return "kevin"; // returns HTML VIEW (greeting)
+        return "kevin/kevin"; // returns HTML VIEW (greeting)
     }
 }
