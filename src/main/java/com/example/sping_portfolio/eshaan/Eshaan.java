@@ -1,4 +1,4 @@
-package com.example.sping_portfolio.controllers;
+package com.example.sping_portfolio.eshaan;
 /* MVC code that shows defining a simple Model, calling View, and this file serving as Controller
  * Web Content with Spring MVCSpring Example: https://spring.io/guides/gs/serving-web-con
  */
@@ -14,6 +14,6 @@ public class Eshaan {
     public String greeting(@RequestParam(name="name", required=false, defaultValue="Eshaan") String name, Model model) {
         // @RequestParam handles required and default values, name and model are class variables, model looking like JSON
         model.addAttribute("name", name); // MODEL is passed to html
-        return "eshaan"; // returns HTML VIEW (greeting)
+        return "eshaan/exposequence"; // returns HTML VIEW (greeting)
     }
 }
