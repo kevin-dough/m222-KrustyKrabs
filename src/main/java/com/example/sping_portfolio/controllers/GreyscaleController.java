@@ -39,19 +39,19 @@ public class GreyscaleController {
         lii.add(new ImageInfo(image5, web_server+image5, 14));
         lii.get(5).read();
 
-        String image6 = "/images/ak.jfif";
+        String image6 = "/images/realdonut.png";
         lii.add(new ImageInfo(image6, web_server+image6, 14));
         lii.get(6).read();
 
-        String image7 = "/images/kevin.jfif";
+        String image7 = "/images/ncs_logo.png";
         lii.add(new ImageInfo(image7, web_server+image7, 14));
         lii.get(7).read();
 
-        String image8 = "/images/navodit.jfif";
+        String image8 = "/images/whitedonut.png";
         lii.add(new ImageInfo(image8, web_server+image8, 14));
         lii.get(8).read();
 
-        String image9 = "/images/eshaan.jfif";
+        String image9 = "/images/zebradonut.png";
         lii.add(new ImageInfo(image9, web_server+image9, 14));
         lii.get(9).read();
 
@@ -88,19 +88,19 @@ public class GreyscaleController {
         lii.add(new ImageInfo(image5, web_server+image5, 14));
         String file5 = lii.get(5).greyscale();
 
-        String image6 = "/images/ak.jfif";
+        String image6 = "/images/realdonut.png";
         lii.add(new ImageInfo(image6, web_server+image6, 14));
         String file6 = lii.get(6).greyscale();
 
-        String image7 = "/images/kevin.jfif";
+        String image7 = "/images/ncs_logo.png";
         lii.add(new ImageInfo(image7, web_server+image7, 14));
         String file7 = lii.get(7).greyscale();
 
-        String image8 = "/images/navodit.jfif";
+        String image8 = "/images/whitedonut.png";
         lii.add(new ImageInfo(image8, web_server+image8, 14));
         String file8 = lii.get(8).greyscale();
 
-        String image9 = "/images/eshaan.jfif";
+        String image9 = "/images/zebradonut.png";
         lii.add(new ImageInfo(image9, web_server+image9, 14));
         String file9 = lii.get(9).greyscale();
 
