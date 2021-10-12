@@ -118,8 +118,7 @@ public class GreyscaleController {
         String file10 = lii.get(9).greyscale();
 
         model.addAttribute("str", str);
-        return "starters/image_grayscale.html";
-        /*return "greyscale";*/
+        return "greyscale";
     }
 }
 
