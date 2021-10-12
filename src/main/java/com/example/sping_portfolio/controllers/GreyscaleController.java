@@ -119,7 +119,7 @@ public class GreyscaleController {
 
         model.addAttribute("str", str);
         return "starters/image_grayscale.html";
-        /*return "greyscale";*/
+        /*return "greyscale";*//
     }
 }
 
