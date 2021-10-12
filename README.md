@@ -13,6 +13,7 @@ Week 7 Video:https://www.youtube.com/watch?v=y7meo_7M0Ac (AK)
 |[control improvements](https://github.com/Navodit1603/m222-KrustyKrabs/issues/31)|Eshaan|[controller code](https://github.com/Navodit1603/m222-KrustyKrabs/blob/master/src/main/java/com/example/sping_portfolio/controllers/GreyscaleController.java)|
 |[control improvements](https://github.com/Navodit1603/m222-KrustyKrabs/issues/31)|AK|[controller code](https://github.com/Navodit1603/m222-KrustyKrabs/commit/0013839a12d1e5740c67405e7a7f6c6ea012b20e)|
 |[model improvements](https://github.com/Navodit1603/m222-KrustyKrabs/issues/30)|Navodit|[model code](https://github.com/Navodit1603/m222-KrustyKrabs/commit/a3bb8f9dc98eef78463869dcbe6459e7174da222)|
+|[immage improvements](https://github.com/Navodit1603/m222-KrustyKrabs/issues/23)|Kevin|[frontend code](https://github.com/Navodit1603/m222-KrustyKrabs/commit/db8724490ce6c15efce596426b5afa0a53acc60b)|
 
 
 
