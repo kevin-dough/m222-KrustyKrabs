@@ -119,6 +119,7 @@ public class GreyscaleController {
 
         model.addAttribute("str", str);
         return "greyscale";
+        /*hi*/
     }
 }
 
