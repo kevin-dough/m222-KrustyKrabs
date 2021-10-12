@@ -7,9 +7,10 @@
 Donut Dictionary is a Donut Rating Site which allows any users to view, search, and create reviews for donuts. Fan Favorites and the Least-Liked List are displayed on the home page to see the highest reviewed donuts and the worst reviewed donuts! You are able to not only score the donuts on a 5-star scale but also write comments that other users can see! The comments can be made anonymously or you can be names as well. There are algorithms that make this look like a professional website, as the the most popular will be features and the website will change throughout the day. This project is created in a presentatble manner. 
 
 ## Week 7: Greyscale Assignments
-|Issue|Asignee|Code|Video|
-|:----:|:----:|:----:|:----:|
-|[control improvements](https://github.com/Navodit1603/m222-KrustyKrabs/issues/31)|Eshaan|[controller code](https://github.com/Navodit1603/m222-KrustyKrabs/blob/master/src/main/java/com/example/sping_portfolio/controllers/GreyscaleController.java)|Link here|
+Video:
+|Issue|Asignee|Code|
+|:----:|:----:|:----:|
+|[control improvements](https://github.com/Navodit1603/m222-KrustyKrabs/issues/31)|Eshaan|[controller code](https://github.com/Navodit1603/m222-KrustyKrabs/blob/master/src/main/java/com/example/sping_portfolio/controllers/GreyscaleController.java)|
 
 Week 4 video: https://www.youtube.com/watch?v=JvT4FSaIfB4 
 ### Prototype Sprint 9/17/2021
