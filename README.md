@@ -11,7 +11,7 @@ Week 7 Video:
 |Issue|Asignee|Code|
 |:----:|:----:|:----:|
 |[control improvements(eshaan)](https://github.com/Navodit1603/m222-KrustyKrabs/issues/31)|Eshaan|[controller code](https://github.com/Navodit1603/m222-KrustyKrabs/blob/master/src/main/java/com/example/sping_portfolio/controllers/GreyscaleController.java)|
-|[control improvements(Ak)](https://github.com/Navodit1603/m222-KrustyKrabs/issues/31)|Eshaan|[controller code](https://github.com/Navodit1603/m222-KrustyKrabs/blob/master/src/main/java/com/example/sping_portfolio/controllers/GreyscaleController.java)|
+|[control improvements(Ak)](https://github.com/Navodit1603/m222-KrustyKrabs/issues/31)|Eshaan|[controller code](https://github.com/Navodit1603/m222-KrustyKrabs/commit/0013839a12d1e5740c67405e7a7f6c6ea012b20e)|
 
 
 Week 4 video: https://www.youtube.com/watch?v=JvT4FSaIfB4 
