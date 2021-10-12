@@ -54,7 +54,7 @@ public class ImageInfo{
 
     // grayscale method
     // return: base64 in grayscale
-    public String grayscale() {
+    public String greyscale() {
         try {
             BufferedImage img = ImageIO.read(new URL(url)); // Saving internet image to BufferedImage
             byte[] pixels = image_to_pixels(img); // See method definition
