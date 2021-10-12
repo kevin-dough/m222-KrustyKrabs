@@ -13,6 +13,7 @@ public class GreyscaleController {
     @GetMapping("/image")
     public String image(Model model) {
         String web_server = "https://localhost:8080/";
+       /*String web_server = "https://csa.nighthawkcodingsociety.com";*/
         List<ImageInfo> lii = new ArrayList<>();
 
         String image0 = "/images/burnt_donut.png";
@@ -51,9 +52,18 @@ public class GreyscaleController {
         lii.add(new ImageInfo(image8, web_server+image8, 14));
         lii.get(8).read();
 
+
         String image9 = "/images/zebradonut.png";
         lii.add(new ImageInfo(image9, web_server+image9, 14));
         lii.get(9).read();
+
+        String image10 = "/images/monalisa.png";
+        lii.add(new ImageInfo(image8, web_server+image10, 14));
+        lii.get(9).read();
+        String image11 = "/images/bob.png";
+        lii.add(new ImageInfo(image8, web_server+image11, 15));
+        lii.get(9).read();
+
 
         model.addAttribute("lii", lii);
         return "image";
@@ -103,9 +113,13 @@ public class GreyscaleController {
         String image9 = "/images/zebradonut.png";
         lii.add(new ImageInfo(image9, web_server+image9, 14));
         String file9 = lii.get(9).greyscale();
+        String image10 = "/images/burntdonut.png";
+        lii.add(new ImageInfo(image9, web_server+image10, 14));
+        String file10 = lii.get(9).greyscale();
 
         model.addAttribute("str", str);
-        return "greyscale";
+        return "starters/image_grayscale.html";
+        /*return "greyscale";*/
     }
 }
 
