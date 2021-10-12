@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<!-- Signals to the Layout Dialect which layout should be used to decorate this View -->
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layout}" lang="en">
+
+<!-- layout::fragment="content" is heart of ThymeLeaf layout -->
+<head>
+  <div layout:fragment="metadata" th:remove="tag">
+    <title>Algo Numbers Lab</title>
+  </div>
+</head>
+
+<body style="background-color: var(--grey)">
+<div layout:fragment="content" th:remove="tag">
+  `<div class="container">
+
+  <div class="center-block" style="margin: 2% 3% 3%; font-family: gilroy,serif; background-color: var(--pink)">
+    <!-- Title -->
+    <div class="col-12" style="text-align: center; padding-top:10px">
+      <h1 class="aboutName" style="color:white;text-shadow:0px 0px 5px black">Navodit's Triangle Lab</h1>
+    </div>
+
+    <!-- Form and Action -->
+    <div class="jumbotron text-center row" style="background-color: var(--tan)">
+      <!-- Input -->
+      <div class="col-md-6">
+        <h3>How many terms are going to be present for the Exponential Sequence?</h3>
+        <form id="trigForm" action="/navodit/triangle" method="GET" >
+          <input name="sequence" id="sequence" type="number" min="2" max="7" >
+          <button style="background-color: var(--blue)">Enter</button>
+        </form>
+      </div>
+      <!-- Output/Result -->
+      <div class="col-md-6">
+        <h3>Expo Sequence</h3>
+        <table class="mx-auto">
+          <tr>
+            <th scope="col">Method</th>
+            <!--- <th scope="col">Time</th> --->
+            <th scope="col"><nth></nth> Term</th>
+            <th scope="col">List</th>
+          </tr>
+          <tr th:each="expo : ${TrigList}">
+            <td th:text="${trig.getName()}"></td>
+            <!--- <td th:text="${arith.getTimeElapsed()}"></td> --->
+            <td th:text="${trig.getNth()}"></td>
+            <td th:text="${trig.getList()}"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</div>`
+</body>
+
+</html>

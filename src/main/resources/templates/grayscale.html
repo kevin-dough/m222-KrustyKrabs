@@ -1,89 +1,23 @@
-<!-- This page is illustrative and contains ideas about HTML formatting -->
 <!DOCTYPE HTML>
 <!-- Signals to the Layout Dialect which layout should be used to decorate this View -->
 <html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
       layout:decorate="~{layout}" lang="en">
 
+<!-- layout::fragment="content" is heart of ThymeLeaf layout -->
 <head>
     <div layout:fragment="metadata" th:remove="tag">
-        <title>Grayscale</title>
+        <title>Grayscale - Image Processing </title>
     </div>
 </head>
 
-<!-- layout::fragment="content" is heart of ThymeLeaf layout -->
-<body style="z-index:0">
+<body>
 <div layout:fragment="content" th:remove="tag">
-    <!-- Start of body content specific to page -->
-    <div style="padding-top:5%"></div>
-    <h1 class="pageTitle">GRAYSCALE WOW!</h1>
-    <div class="row justify-content-center">
-        <div style="margin-top:15px" class="row">
-            <div>
-                <center>
-                    <img src="/static/images/donut.png" th:src="@{/images/donut.png}" width="300px" height="300px">
-                    <div>
-                        <button class="listMenuTitle"
-                                style="border:none;background-color:var(--blue);margin-top:50px;padding:15px">GO GO GO!
-                        </button>
-                    </div>
-                </center>
-            </div>
-
-            <div>
-                <table class="table">
-                    <thead>
-                    <tr>
-                        <th>Meta Data</th>
-                        <th>Image</th>
-                        <th>Samples of Data</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr th:each="ii: ${lii}">
-                        <td>
-                            <div th:text="${ii.getFile()}">File name</div>
-                            <div th:text="'(' + ${ii.getHeight()} + ',' + ${ii.getWidth()} + ')'">Height,Width</div>
-                        </td>
-                        <td>
-                            <img class="img-responsive py-3" th:src="@{${ii.getFile()}}" alt="" src="${ii.getFile()}"
-                                 width=128 height="Auto">
-                        </td>
-                        <td>
-                            <div class="overflow-auto" style="height: 256px">
-                                <table class="table">
-                                    <thead>
-                                    <tr>
-                                        <th>Row</th>
-                                        <th>Column</th>
-                                        <th>RGB</th>
-                                        <th>Hex Code</th>
-                                        <th>Binary</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <span th:each="row: ${#numbers.sequence(0, ii.getScaled_height()-1)}">
-                                        <tr th:each="col: ${#numbers.sequence(0, ii.getScaled_width()-1)}">
-                                            <td th:text="${ii.getScaled_height(row)}">row</td>
-                                            <td th:text="${ii.getScaled_width(col)}">column</td>
-                                            <td th:text="${ii.getRGB(row,col)}">cell</td>
-                                            <td th:text="${ii.getHexCode(row,col)}">cell</td>
-                                            <td th:text="${ii.getBinary(row,col)}">cell</td>
-                                        </tr>
-                                    </span>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-
-        </div>
+    <div class="container">
+        <h1 class="text-center">Grayscale Images</h1>
+        <img th:src="${str0}">
+        <img th:src="${str1}">
     </div>
-
-        <!-- End of body content specific to page -->
-    </div>
+</div>
 </body>
 
 </html>
