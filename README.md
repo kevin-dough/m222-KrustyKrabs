@@ -10,7 +10,7 @@ Donut Dictionary is a Donut Rating Site which allows any users to view, search, 
 ### Week 7: Greyscale Assignments
 Week 7 Video Playlist: https://youtube.com/playlist?list=PLi_5DyFCuqeuF1IN_qG2O9TIu1uGprph8 
 
-[Week 7 Ticket ](https://youtu.be/j-it8tR4QY8)
+[Week 7 Ticket ](https://github.com/kevin-dough/m222-KrustyKrabs/issues/6)
 |Issue|Asignee|Code|
 |:----:|:----:|:----:|
 |[control improvements](https://github.com/Navodit1603/m222-KrustyKrabs/issues/31)|Eshaan|[controller code](https://github.com/Navodit1603/m222-KrustyKrabs/blob/master/src/main/java/com/example/sping_portfolio/controllers/GreyscaleController.java)|
