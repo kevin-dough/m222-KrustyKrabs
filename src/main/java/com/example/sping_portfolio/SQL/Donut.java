@@ -4,7 +4,6 @@ import lombok.*;
 
 import javax.persistence.*;
 import javax.validation.constraints.Size;
-import java.util.Date;
 
 @NoArgsConstructor
 @Getter
@@ -24,6 +23,9 @@ public class Donut {
     @Size(min = 2, max = 30, message = "Store name(2 to 30 chars)")
     private String store;
 
+    @NonNull
+    @Size(min = 1, max = 5, message = "Add a rating")
+    private int rating;
 
 
     public Donut(String name, String store, Integer rating){
