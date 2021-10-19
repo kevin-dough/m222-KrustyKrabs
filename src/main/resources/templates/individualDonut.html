@@ -1,0 +1,70 @@
+<!-- This page is illustrative and contains ideas about HTML formatting -->
+<!DOCTYPE HTML>
+<!-- Signals to the Layout Dialect which layout should be used to decorate this View -->
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layout}" lang="en">
+
+<head>
+    <div layout:fragment="metadata" th:remove="tag">
+        <title>BURNT DONUT</title>
+    </div>
+</head>
+
+<!-- layout::fragment="content" is heart of ThymeLeaf layout -->
+<body style="z-index:0">
+<div layout:fragment="content" th:remove="tag">
+    <!-- Start of body content specific to page -->
+    <div class="row justify-content-around" style="padding-top:5%;width:80%">
+        <div class="individualCard row" style="margin-left:10px;margin-right:10px;">
+            <img src="/static/images/burnt_donut.png" th:src="@{/images/burnt_donut.png}" class="individualImgSquareCrop listMenuImg">
+            <div style="padding-top:20px">
+                <p class="cardTitle">BURNT DONUT</p>
+                <div class="row">
+                    <p class="reviewScoreText" style="padding-right:20px">4.2</p>
+                    <i style="color:var(--pink); font-size:20px" class="fa fa-star"></i>
+                    <i style="color:var(--pink); font-size:20px" class="fa fa-star"></i>
+                    <i style="color:var(--pink); font-size:20px" class="fa fa-star"></i>
+                    <i style="color:var(--pink); font-size:20px" class="fa fa-star"></i>
+                    <i style="color:var(--grey); font-size:20px" class="fa fa-star"></i>
+                </div>
+                <div style="width:200px;overflow-wrap: break-word;" class="row">
+                    <p class="tagText">charcoal</p>
+                    <p class="tagText">smoke</p>
+                    <p class="tagText">ash</p>
+                </div>
+            </div>
+        </div>
+        <div class="listMenuCard row" style="margin-left:10px;margin-right:10px;padding:20px">
+            <div style="padding-top:5px">
+                <div class="row">
+                    <p class="cardTitle">ADD A REVIEW</p>
+                    <div style="margin-top:15px; margin-left:25px">
+                        <i style="color:var(--grey); font-size:20px" class="fa fa-star"></i>
+                        <i style="color:var(--grey); font-size:20px" class="fa fa-star"></i>
+                        <i style="color:var(--grey); font-size:20px" class="fa fa-star"></i>
+                        <i style="color:var(--grey); font-size:20px" class="fa fa-star"></i>
+                        <i style="color:var(--grey); font-size:20px" class="fa fa-star"></i>
+                    </div>
+                </div>
+                <div>
+                    <p style="padding-bottom:10px;"><input class="reviewInput" type="text" placeholder="name" size="53"></p>
+                    <p style="padding-bottom:10px;"><input class="reviewInput" type="text" placeholder="type here" size="53"></p>
+                    <p><input class="reviewSubmit" type="submit" value="SUBMIT"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h1 style="padding-left:20px; padding-top:20px" class="listMenuTitle">REVIEWS</h1>
+        <div class="row justify-content-center">
+
+
+        </div>
+    </div>
+
+    <!-- End of body content specific to page -->
+</div>
+</body>
+
+</html>

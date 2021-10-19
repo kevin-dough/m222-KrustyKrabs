@@ -1,0 +1,30 @@
+<!-- This page is illustrative and contains ideas about HTML formatting -->
+<!DOCTYPE HTML>
+<!-- Signals to the Layout Dialect which layout should be used to decorate this View -->
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layout}" lang="en">
+
+<head>
+    <div layout:fragment="metadata" th:remove="tag">
+        <title>ASCII</title>
+    </div>
+</head>
+
+<!-- layout::fragment="content" is heart of ThymeLeaf layout -->
+<body style="z-index:0">
+<div layout:fragment="content" th:remove="tag">
+    <!-- Start of body content specific to page -->
+    <div style="padding-left:2%; padding-top:2%">
+        <div style="margin:10px">
+            <img th:src="@{/images/donut.png}" width="300" height="300">
+        </div>
+        <form action="/kevin/asciilab" method="POST" id="uploadForm" enctype="multipart/form-data" onsubmit="uploadfile()">
+            <input style="width:250px" class="form-control" type="file" id="inputFile" name="inputFile"/><br>
+            <input type="submit" value="Submit"/>
+        </form>
+    </div>
+    <!-- End of body content specific to page -->
+</div>
+</body>
+
+</html>

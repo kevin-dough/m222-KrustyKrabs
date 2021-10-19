@@ -37,6 +37,12 @@ div.listMenu {
     width: 500px;
 }
 
+.individualCard {
+    flex: 0 0 auto;
+    background-color: var(--tan);
+    width: 600px;
+}
+
 img.listMenuImg {
     padding:20px;
 }
@@ -58,6 +64,12 @@ div::-webkit-scrollbar-thumb {
 .imgSquareCrop {
     width: 250px;
     height: 250px;
+    object-fit: cover;
+}
+
+.individualImgSquareCrop {
+    width: 330px;
+    height: 330px;
     object-fit: cover;
 }
 
@@ -133,4 +145,25 @@ body::-webkit-scrollbar-thumb {
     text-shadow: 0px 0px 5px black;
     font-size: 7em;
     text-align:center;
+}
+
+.reviewInput {
+    background-color: #d9d9d9;
+    color: var(--grey);
+    border:none;
+    outline: none;
+    padding: 15px;
+}
+
+.reviewSubmit {
+    background-color: var(--blue);
+    font-family: 'Luckiest Guy';
+    color:white;
+    border:none;
+    outline:none;
+    text-shadow: 0px 0px 5px black;
+    font-size: 1.5em;
+    text-align:center;
+    width:460px;
+    padding:5px;
 }
