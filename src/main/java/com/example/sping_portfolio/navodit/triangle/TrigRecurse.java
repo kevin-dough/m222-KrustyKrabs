@@ -1,4 +1,4 @@
-package com.example.sping_portfolio.triangle;
+package com.example.sping_portfolio.navodit.triangle;
 
 public class TrigRecurse extends _Triangle {
     public TrigRecurse() {

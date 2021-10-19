@@ -1,4 +1,4 @@
-package com.example.sping_portfolio.triangle;
+package com.example.sping_portfolio.navodit.triangle;
 
 
 import org.springframework.stereotype.Controller;
@@ -25,6 +25,6 @@ import java.util.List;
     public String trig(@RequestParam(name="sequence", required=false,  defaultValue="2") String sequence, Model model){
         int nth = Integer.parseInt(sequence);
         model.addAttribute("TrigList", TrigInit(nth));
-        return "navodit/trig";}
+        return "navodit/triangle";}
 
 }

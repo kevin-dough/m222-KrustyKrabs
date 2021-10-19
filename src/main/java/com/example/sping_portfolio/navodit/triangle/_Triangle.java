@@ -1,8 +1,7 @@
-package com.example.sping_portfolio.triangle;
+package com.example.sping_portfolio.navodit.triangle;
 
 import com.example.sping_portfolio.ConsoleMethods;
 
-import java.io.Console;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;

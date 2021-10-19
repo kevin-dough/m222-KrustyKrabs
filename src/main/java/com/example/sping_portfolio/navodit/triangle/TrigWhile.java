@@ -1,4 +1,4 @@
-package com.example.sping_portfolio.triangle;
+package com.example.sping_portfolio.navodit.triangle;
 
 public class TrigWhile extends _Triangle {
     public TrigWhile() {

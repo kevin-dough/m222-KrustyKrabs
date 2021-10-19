@@ -1,4 +1,4 @@
-package com.example.sping_portfolio.triangle;
+package com.example.sping_portfolio.navodit.triangle;
 
 public class TrigFor extends _Triangle {
     // zero and one argument constructors, both defer to super
