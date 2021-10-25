@@ -8,7 +8,7 @@ Donut Dictionary is a Donut Rating Site which allows any users to view, search, 
 
 ## Individual Finals (Part 1)
 ### [Issue Kevin ](https://github.com/kevin-dough/m222-KrustyKrabs/issues/32)
-### [Issue AK ](https://github.com/kevin-dough/m222-KrustyKrabs/issues/33)
+
 ## Pop Quiz!
 m222-KrustyKrabs, [scrumboard](https://github.com/Navodit1603/m222-KrustyKrabs/projects/1), [contributors](https://github.com/Navodit1603/m222-KrustyKrabs/graphs/contributors)
 
