@@ -7,11 +7,6 @@ public class Contact {
     private String phoneNumber;
     private String email;
 
-    public Contact()
-    {
-
-    }
-
     public Contact(String firstName, String lastName, String phoneNumber, String email) {
     //create an attribute
         this.firstName = firstName;
