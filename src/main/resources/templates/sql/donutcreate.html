@@ -45,23 +45,56 @@
                 <div>
                         <form action="#" th:action="@{/sql/donutcreate}" th:object="${donut}" method="POST">
                             <div class="stars">
-                                <input class="star star-5" id="star-5" type="radio" name="star"/>
-                                <label class="star star-5" for="star-5"></label>
-                                <input class="star star-4" id="star-4" type="radio" name="star"/>
-                                <label class="star star-4" for="star-4"></label>
-                                <input class="star star-3" id="star-3" type="radio" name="star"/>
-                                <label class="star star-3" for="star-3"></label>
-                                <input class="star star-2" id="star-2" type="radio" name="star"/>
-                                <label class="star star-2" for="star-2"></label>
-                                <input class="star star-1" id="star-1" type="radio" name="star"/>
-                                <label class="star star-1" for="star-1"></label>
+                                <label for="radio1" class="star"><i id="reviewStar1" onclick="clickStar('reviewStar1')" style="color:var(--grey); font-size:30px" class="fa fa-star"></i></label>
+                                <input class="star" style="visibility: hidden" id="radio1" name="reviewRadio" type="radio">
+                                <label for="radio2" class="star"><i id="reviewStar2" onclick="clickStar('reviewStar2')" style="color:var(--grey); font-size:30px" class="fa fa-star"></i></label>
+                                <input class="star" style="visibility: hidden" id="radio2" name="reviewRadio" type="radio">
+                                <label for="radio3" class="star"><i id="reviewStar3" onclick="clickStar('reviewStar3')" style="color:var(--grey); font-size:30px" class="fa fa-star"></i></label>
+                                <input class="star" style="visibility: hidden" id="radio3" name="reviewRadio" type="radio">
+                                <label for="radio4" class="star"><i id="reviewStar4" onclick="clickStar('reviewStar4')" style="color:var(--grey); font-size:30px" class="fa fa-star"></i></label>
+                                <input class="star" style="visibility: hidden" id="radio4" name="reviewRadio" type="radio">
+                                <label for="radio5" class="star"><i id="reviewStar5" onclick="clickStar('reviewStar5')" style="color:var(--grey); font-size:30px" class="fa fa-star"></i></label>
+                                <input class="star" style="visibility: hidden" id="radio5" name="reviewRadio" type="radio">
                             </div>
                             <p style="padding-bottom:10px;"><input class="reviewInput" type="text" th:field="*{donuttype}" placeholder="Type of donut!" size="53"></p>
                             <p style="padding-bottom:10px;"><input class="reviewInput" type="text" th:field="*{place}" placeholder="Donut place!" size="53"></p>
                             <p style="padding-bottom:10px;"><input class="reviewInput" type="date" th:field="*{date}"></p>
                             <p style="padding-bottom:10px;"><input class="reviewInput" type="text" th:field="*{comment}" placeholder="Leave your thoughts here!" size="53"></p>
-                            <p><input class="reviewSubmit" type="submit" value="SUBMIT"></p>
+                            <p><input class="reviewSubmit" style="width:455px" type="submit" value="SUBMIT"></p>
                         </form>
+                    <script>
+                        function clickStar(id)
+                        {
+                            if(id === 'reviewStar1') {
+                                clearStars()
+                                fillStars(1)
+                            } else if (id === 'reviewStar2'){
+                                clearStars()
+                                fillStars(2)
+                            } else if (id === 'reviewStar3'){
+                                clearStars()
+                                fillStars(3)
+                            } else if (id === 'reviewStar4'){
+                                clearStars()
+                                fillStars(4)
+                            } else if (id === 'reviewStar5'){
+                                clearStars()
+                                fillStars(5)
+                            }
+                        }
+
+                        function clearStars() {
+                            for (let i = 1; i <= 5; i++) {
+                                document.getElementById('reviewStar'+i).style.color = 'var(--grey)';
+                            }
+                        }
+
+                        function fillStars(number) {
+                            for (let i = 1; i <= number; i++) {
+                                document.getElementById('reviewStar'+i).style.color = 'var(--pink)';
+                            }
+                        }
+                    </script>
                 </div>
             </div>
         </div>
