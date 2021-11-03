@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Twitter API</title>
+
+    <style>
+        table, td, th {
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            padding: 15px;
+        }
+    </style>
+
+</head>
+<body>
+<div layout:fragment="content" th:remove="tag">
+    <div class="container">
+
+        <div class="row justify-content-md-center">
+            <h1><strong>Twitter API</strong></h1>
+            <form action="/api" method="GET" id="twitterForm">
+                <button>Refresh!</button>
+            </form>
+        </div>
+
+        <table>
+            <tr>
+                <th>Author</th>
+                <th>Tweets</th>
+                <th>Retweets</th>
+            </tr>
+            <tr th:each="tweet : ${tweets}">
+                <td th:text="${tweet.user_screen_name}"></td>
+                <td th:text="${tweet.text}"></td>
+                <td th:text="${tweet.retweet_count}"></td>
+            </tr>
+            </tr>
+        </table>
+
+
+        </table>
+    </div>
+    <script th:inline="javascript">
+        const news = [[${tweets}]]
+        console.log(news)
+    </script>
+        </div>
+</body>
+</html>
