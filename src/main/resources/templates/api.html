@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Twitter API</title>
-
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy" rel="stylesheet">
     <style>
         table, td, th {
             border: 1px solid #ddd;
@@ -18,6 +18,38 @@
         th, td {
             padding: 15px;
         }
+
+        body{
+            background: #212529;
+        }
+
+        h1 {
+            font-family: "Monaco", monospace;
+            color: white;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+        .button:hover {background-color: #3e8e41}
+
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
     </style>
 
 </head>
@@ -28,11 +60,13 @@
         <div class="row justify-content-md-center">
             <h1><strong>Twitter API</strong></h1>
             <form action="/api" method="GET" id="twitterForm">
-                <button>Refresh!</button>
+                <button class="button">Refresh!</button>
             </form>
         </div>
 
-        <table>
+        <div style="padding-top:10px;padding-left:10px">
+            <hr>
+            <table style="color:white" border="1">
             <tr>
                 <th>Author</th>
                 <th>Tweets</th>
@@ -53,6 +87,6 @@
         const news = [[${tweets}]]
         console.log(news)
     </script>
-        </div>
+</div>
 </body>
 </html>
