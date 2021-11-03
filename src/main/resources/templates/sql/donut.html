@@ -29,7 +29,7 @@
                 <tbody>
                 <tr th:each="donut : ${list}">
                     <td th:text="${donut.id}">Donut ID</td>
-                    <td th:text="${donut.email}">Birth Date</td>
+                    <td th:text="${donut.donuttype}">Donut Type</td>
                     <td th:text="${donut.name}">Name</td>
                     <td th:text="${donut.getAge()}">Age</td>
                     <td>

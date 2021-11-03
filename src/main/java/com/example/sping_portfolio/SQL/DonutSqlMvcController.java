@@ -2,10 +2,6 @@ package com.example.sping_portfolio.SQL;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -36,8 +32,8 @@ public class DonutSqlMvcController implements WebMvcConfigurer {
     }
 
     /*  The HTML template Forms and donutForm attributes are bound
-        @return - template for donut form
-        @param - donut Class
+        @return - template for donuttype form
+        @param - donuttype Class
     */
     @GetMapping("/sql/donutcreate")
     public String donutAdd(Donut donut) {
@@ -117,19 +113,21 @@ public class DonutSqlMvcController implements WebMvcConfigurer {
     POST Aa record by Requesting Parameters from URI
      */
     @RequestMapping(value = "/sql/donut/post", method = RequestMethod.POST)
-    public ResponseEntity<Object> postdonut(@RequestParam("email") String email,
-                                             @RequestParam("name") String name,
-                                             @RequestParam("dob") String dobString) {
-        Date dob;
+    public ResponseEntity<Object> postdonut(@RequestParam("donuttype") String donuttype,
+                                             @RequestParam("place") String place,
+                                             @RequestParam("date") String dateString,
+                                             @RequestParam("rating") int rating,
+                                             @RequestParam("comment") String comment ) {
+        Date date;
         try {
-            dob = new SimpleDateFormat("MM-dd-yyyy").parse(dobString);
+            date = new SimpleDateFormat("MM-dd-yyyy").parse(dateString);
         } catch (Exception e) {
-            return new ResponseEntity<>(dobString +" error; try MM-dd-yyyy", HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(dateString +" error; try MM-dd-yyyy", HttpStatus.BAD_REQUEST);
         }
         // A donut object WITHOUT ID will create a new record
-        Donut donut = new Donut(email, name, dob);
+        Donut donut = new Donut(donuttype, place, date, rating, comment);
         repository.save(donut);
-        return new ResponseEntity<>(email +" is created successfully", HttpStatus.CREATED);
+        return new ResponseEntity<>(donuttype +" is created successfully", HttpStatus.CREATED);
     }
 
 }

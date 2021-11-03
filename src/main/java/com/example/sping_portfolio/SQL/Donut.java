@@ -21,40 +21,43 @@ The last annotation connect to database
 @Getter
 @ToString
 @NoArgsConstructor
-@RequiredArgsConstructor
 @Entity
+@Table(name="donuts")
 public class Donut {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @NotEmpty
-    @Size(min=5)
-    @Email
-    private String email;
+    @Size(min=2, message = "What kind of donut?")
+    private String donuttype;
 
     /*
     @NonNull: Places this in @RequiredArgsConstructor
     @Size(min=2, max=30): Allows names between 2 and 30 characters long.
      */
-    @NonNull
-    @Size(min = 2, max = 30, message = "Name (2 to 30 chars)")
-    private String name;
+    @NotEmpty
+    @Size(min = 2, max = 30, message = "Donut place (Required)!")
+    private String place;
 
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
-    private Date dob;
+    @DateTimeFormat(pattern = "mm/dd/yyyy")
+    private Date date;
+
+    @NotNull
+    @Size(min = 1, max = 5, message = "Rate from 1 to 5!")
+    private int rating;
+
+    @NotEmpty
+    @Size(max = 500, message = "Limit is 500 words!")
+    private String comment;
 
     /* Initializer used when setting data from an API */
-    public Donut(String email, String name, Date dob) {
-        this.email = email;
-        this.name = name;
-        this.dob = dob;
-    }
-
-    /* A custom getter to return age from dob calculation */
-    public int getAge() {
-        LocalDate birthDay = this.dob.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-        return Period.between(birthDay, LocalDate.now()).getYears();
+    public Donut(String donut, String place, Date date, int rating, String comment) {
+        this.donuttype = donut;
+        this.place = place;
+        this.date = date;
+        this.rating = rating;
+        this.comment = comment;
     }
 
 }
