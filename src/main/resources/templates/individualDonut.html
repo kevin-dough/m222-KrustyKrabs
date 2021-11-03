@@ -6,7 +6,7 @@
 
 <head>
     <div layout:fragment="metadata" th:remove="tag">
-        <title>BURNT DONUT</title>
+        <title th:text="${name}"></title>
     </div>
 </head>
 
@@ -16,44 +16,50 @@
     <!-- Start of body content specific to page -->
     <div class="row justify-content-around" style="padding-top:5%;width:80%">
         <div class="individualCard row" style="margin-left:10px;margin-right:10px;">
-            <img src="/static/images/burnt_donut.png" th:src="@{/images/burnt_donut.png}"
+            <img src="/static/images/burnt_donut.png" th:src="@{${'/images/' + image }}"
                  class="individualImgSquareCrop listMenuImg">
             <div style="padding-top:20px">
-                <p class="cardTitle">BURNT DONUT</p>
+                <p class="cardTitle" th:text="${name}"></p>
                 <div class="row">
-                    <p class="reviewScoreText" style="padding-right:20px">4.2</p>
-                    <i style="color:var(--pink); font-size:20px" class="fa fa-star"></i>
-                    <i style="color:var(--pink); font-size:20px" class="fa fa-star"></i>
-                    <i style="color:var(--pink); font-size:20px" class="fa fa-star"></i>
-                    <i style="color:var(--pink); font-size:20px" class="fa fa-star"></i>
-                    <i style="color:var(--grey); font-size:20px" class="fa fa-star"></i>
+                    <p class="reviewScoreText" style="padding-right:20px" th:text="${rating}"></p>
+                    <i style="color:var(--pink); font-size:20px" class="fa fa-star" th:each="i: ${#numbers.sequence(1, roundedRating)}"></i>
+                    <div th:if="${noStars != 0}">
+                        <i style="color:var(--grey); font-size:20px" class="fa fa-star" th:each="i: ${#numbers.sequence(1, noStars)}"></i> <!-- thymeleaf sucks -->
+                    </div>
                 </div>
                 <div style="width:200px;overflow-wrap: break-word;" class="row">
-                    <p class="tagText">charcoal</p>
-                    <p class="tagText">smoke</p>
-                    <p class="tagText">ash</p>
+                    <p class="tagText" th:text="${tag1}"></p>
+                    <p class="tagText" th:text="${tag2}"></p>
+                    <p class="tagText" th:text="${tag3}"></p>
+                    <p class="tagText" th:text="${tag4}"></p>
                 </div>
             </div>
         </div>
-        <div class="listMenuCard row" style="margin-left:10px;margin-right:10px;padding:20px">
+        <div class="freeWidthMenuCard row" style="margin-left:10px;margin-right:10px;padding:20px;width:570px">
             <div style="padding-top:5px">
                 <div class="row">
                     <p class="cardTitle">ADD A REVIEW</p>
+
                     <div style="margin-top:15px; margin-left:25px">
-                        <i style="color:var(--grey); font-size:20px" class="fa fa-star"></i>
-                        <i style="color:var(--grey); font-size:20px" class="fa fa-star"></i>
-                        <i style="color:var(--grey); font-size:20px" class="fa fa-star"></i>
-                        <i style="color:var(--grey); font-size:20px" class="fa fa-star"></i>
-                        <i style="color:var(--grey); font-size:20px" class="fa fa-star"></i>
+                        <label for="radio1"><i id="reviewStar1" onclick="clickStar('reviewStar1')" style="color:var(--grey); font-size:20px" class="fa fa-star"></i></label>
+                        <input style="visibility: hidden" id="radio1" name="reviewRadio" type="radio">
+                        <label for="radio2"><i id="reviewStar2" onclick="clickStar('reviewStar2')" style="color:var(--grey); font-size:20px" class="fa fa-star"></i></label>
+                        <input style="visibility: hidden" id="radio2" name="reviewRadio" type="radio">
+                        <label for="radio3"><i id="reviewStar3" onclick="clickStar('reviewStar3')" style="color:var(--grey); font-size:20px" class="fa fa-star"></i></label>
+                        <input style="visibility: hidden" id="radio3" name="reviewRadio" type="radio">
+                        <label for="radio4"><i id="reviewStar4" onclick="clickStar('reviewStar4')" style="color:var(--grey); font-size:20px" class="fa fa-star"></i></label>
+                        <input style="visibility: hidden" id="radio4" name="reviewRadio" type="radio">
+                        <label for="radio5"><i id="reviewStar5" onclick="clickStar('reviewStar5')" style="color:var(--grey); font-size:20px" class="fa fa-star"></i></label>
+                        <input style="visibility: hidden" id="radio5" name="reviewRadio" type="radio">
                     </div>
                 </div>
                 <div>
-                    <p style="padding-bottom:10px;"><input class="reviewInput" type="text" placeholder="name" size="53">
+                    <p style="padding-bottom:10px;"><input class="reviewInput" type="text" placeholder="name" size="63">
                     </p>
-                    <p style="padding-bottom:10px;"><input class="reviewInput" type="text" placeholder="type here"
-                                                           size="53"></p>
+                    <p style="padding-bottom:10px;"><input class="reviewInput" type="text" placeholder="type here" size="63"></p>
                     <p><input class="reviewSubmit" type="submit" value="SUBMIT"></p>
                 </div>
+                </form>
             </div>
         </div>
     </div>
@@ -61,7 +67,7 @@
     <div style="padding-top:15px">
         <center>
             <h1 style="padding-left:20px; padding-top:20px" class="listMenuTitle">REVIEWS</h1>
-            <div class="row justify-content-around" style="width:50%; padding-top:15px">
+            <div class="row justify-content-around" style="width:55%; padding-top:15px">
                 <div class="freeWidthMenuCard" style="padding:10px; width:500px">
                     <div class="row">
                         <p style="margin-left:10px" class="cardTitle">JOHN DOE</p>
@@ -94,7 +100,7 @@
                 </div>
             </div>
 
-            <div class="row justify-content-around" style="width:50%; padding-top:15px">
+            <div class="row justify-content-around" style="width:55%; padding-top:15px">
                 <div class="freeWidthMenuCard" style="padding:10px; width:500px">
                     <div class="row">
                         <p style="margin-left:10px" class="cardTitle">JOHN DOE</p>
@@ -129,7 +135,39 @@
 
         </center>
     </div>
+<script>
+    function clickStar(id)
+    {
+        if(id === 'reviewStar1') {
+            clearStars()
+            fillStars(1)
+        } else if (id === 'reviewStar2'){
+            clearStars()
+            fillStars(2)
+        } else if (id === 'reviewStar3'){
+            clearStars()
+            fillStars(3)
+        } else if (id === 'reviewStar4'){
+            clearStars()
+            fillStars(4)
+        } else if (id === 'reviewStar5'){
+            clearStars()
+            fillStars(5)
+        }
+    }
 
+    function clearStars() {
+        for (let i = 1; i <= 5; i++) {
+            document.getElementById('reviewStar'+i).style.color = 'var(--grey)';
+        }
+    }
+
+    function fillStars(number) {
+        for (let i = 1; i <= number; i++) {
+            document.getElementById('reviewStar'+i).style.color = 'var(--pink)';
+        }
+    }
+</script>
     <!-- End of body content specific to page -->
 </div>
 </body>

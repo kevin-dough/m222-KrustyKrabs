@@ -6,38 +6,17 @@
 
 <head>
     <div layout:fragment="metadata" th:remove="tag">
-        <title>Contact List</title>
+        <title>Page Title</title>
     </div>
 </head>
 
 <!-- layout::fragment="content" is heart of ThymeLeaf layout -->
 <body>
 <div layout:fragment="content" th:remove="tag">
-    <!-- Start of body content specific to page --><!DOCTYPE html>
-    <div style="padding-top:10px;padding-left:10px">
-    <h3 class="cardTitle">Contact Directory</h3>
-    <hr>
-    <table style="color:white" border="1">
-        <thead>
-        <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Phone Number</th>
-            <th>Email</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr th:each="tempContacts:${contacts}">
-            <td th:text="${tempContacts.firstName}"></td>
-            <td th:text="${tempContacts.lastName}"></td>
-            <td th:text="${tempContacts.phoneNumber}"></td>
-            <td th:text="${tempContacts.email}"></td>
-        </tr>
+    <!-- Start of body content specific to page -->
 
 
-        </tbody>
-    </table>
-    </div>
+    <!-- end of body content specific to page -->
 </div>
 </body>
 </html>
