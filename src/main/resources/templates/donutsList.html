@@ -1,0 +1,63 @@
+<!-- This page is illustrative and contains ideas about HTML formatting -->
+<!DOCTYPE HTML>
+<!-- Signals to the Layout Dialect which layout should be used to decorate this View -->
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layout}" lang="en">
+
+<head>
+  <div layout:fragment="metadata" th:remove="tag">
+    <title>All Donuts</title>
+  </div>
+</head>
+
+<!-- layout::fragment="content" is heart of ThymeLeaf layout -->
+<body>
+<div layout:fragment="content" th:remove="tag">
+  <!-- Start of body content specific to page -->
+<div style="padding-left:15px; padding-top:10px; overflow-wrap: break-word; width:50%" class="row justify-content-around"  th:each="i: ${#numbers.sequence(1, 5)}">
+  <div class="listMenuCard row" style="margin-left:10px;margin-right:10px; margin-bottom:10px">
+    <a href="/donut/burnt"><img src="/static/images/burnt_donut.png" th:src="@{/images/burnt_donut.png}" class="imgSquareCrop listMenuImg"></a>
+    <div style="padding-top:20px">
+      <a href="/donut/burnt"><p class="cardTitle">BURNT DONUT</p></a>
+      <div class="row">
+        <p class="reviewScoreText" style="padding-right:20px">3.2</p>
+        <i style="color:var(--pink); font-size:20px;" class="fa fa-star"></i>
+        <i style="color:var(--pink); font-size:20px;" class="fa fa-star"></i>
+        <i style="color:var(--pink); font-size:20px;" class="fa fa-star"></i>
+        <i style="color:var(--grey); font-size:20px;" class="fa fa-star"></i>
+        <i style="color:var(--grey); font-size:20px;" class="fa fa-star"></i>
+      </div>
+      <div style="width:200px;overflow-wrap: break-word;" class="row">
+        <p class="tagText">charcoal</p>
+        <p class="tagText">smoke</p>
+        <p class="tagText">ash</p>
+        <p class="tagText">powder</p>
+      </div>
+    </div>
+  </div>
+  <div class="listMenuCard row" style="margin-left:10px;margin-right:10px; margin-bottom:10px">
+    <a href="/donut/glazed"><img src="/static/images/glazed_donut.png" th:src="@{/images/glazed_donut.png}" class="imgSquareCrop listMenuImg"></a>
+    <div style="padding-top:20px">
+      <a href="/donut/glazed"><p class="cardTitle">ORIGINAL GLAZED</p></a>
+      <div class="row">
+        <p class="reviewScoreText" style="padding-right:20px">3.6</p>
+        <i style="color:var(--pink); font-size:20px;" class="fa fa-star"></i>
+        <i style="color:var(--pink); font-size:20px;" class="fa fa-star"></i>
+        <i style="color:var(--pink); font-size:20px;" class="fa fa-star"></i>
+        <i style="color:var(--pink); font-size:20px;" class="fa fa-star"></i>
+        <i style="color:var(--grey); font-size:20px;" class="fa fa-star"></i>
+      </div>
+      <div style="width:200px;overflow-wrap: break-word;" class="row">
+        <p class="tagText">glazed</p>
+        <p class="tagText">og</p>
+        <p class="tagText">delicious</p>
+        <p class="tagText">starter</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- end of body content specific to page -->
+</div>
+</body>
+</html>
