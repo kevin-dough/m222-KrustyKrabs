@@ -24,9 +24,10 @@ public class DonutSqlMvcController implements WebMvcConfigurer {
     @Autowired
     private DonutSqlRepository repository;
 
-    @GetMapping("/")
+    @GetMapping("/donutindex")
     public String donut(Model model) {
         List<Donut> list = repository.listAll();
+        System.out.println(list);
         model.addAttribute("list", list);
         return "index";
     }
