@@ -3,8 +3,10 @@
 
 "CODE CODE CODE!"
 
-### Description:
-Donut Dictionary is a Donut Rating Site which allows any users to view, search, and create reviews for donuts. Fan Favorites and the Least-Liked List are displayed on the home page to see the highest reviewed donuts and the worst reviewed donuts! You are able to not only score the donuts on a 5-star scale but also write comments that other users can see! The comments can be made anonymously or you can be names as well. There are algorithms that make this look like a professional website, as the the most popular will be features and the website will change throughout the day. This project is created in a presentatble manner.
+### Description and Project Scope:
+Donut Dictionary is a Donut Rating Site which allows any users to view, search, and create reviews for donuts. Fan Favorites and the Least-Liked List are displayed on the home page to see the highest reviewed donuts and the worst reviewed donuts! You are able to not only score the donuts on a 5-star scale but also write comments that other users can see! The comments can be made anonymously or you can be names as well.
+
+
 
 ## Individual Finals (Part 1)
 ### [Link to Issue](https://github.com/kevin-dough/m222-KrustyKrabs/issues/32)
@@ -17,7 +19,7 @@ m222-KrustyKrabs, [scrumboard](https://github.com/Navodit1603/m222-KrustyKrabs/p
 [Ak and Eshaan](https://docs.google.com/document/d/1_00m8_Ps-8xa50mRHRDDZVe1lTe19DJE-vb_fP_6JeY/edit)
 
 
-### Pop Quiz
+### Pop Quiz (Contributors)
 |        Name        | Github Username   |ID                 |Tasks |Scrumboard |Commits |Profile |
 |:------------------:|-------------------|-------------------|------|-----------|--------|--------|
 | Kevin Do           | kevin-dough       |54718041| [Tasks](https://github.com/Navodit1603/m222-KrustyKrabs/issues/assigned/kevin-dough)|[Scrumboard](https://github.com/Navodit1603/m222-KrustyKrabs/projects/1?card_filter_query=assignee%3Akevin-dough)|[commits](https://github.com/Navodit1603/m222-KrustyKrabs/commits?author=kevin-dough)|[profile](https://github.com/kevin-dough)|
