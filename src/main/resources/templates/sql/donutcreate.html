@@ -44,7 +44,7 @@
                 </div>
                 <div>
                         <form action="#" th:action="@{/sql/donutcreate}" th:object="${donut}" method="POST">
-                            <div class="stars">
+                            <div class="stars" th:field="*{rating}">
                                 <label for="radio1" class="star"><i id="reviewStar1" onclick="clickStar('reviewStar1')" style="color:var(--grey); font-size:30px" class="fa fa-star"></i></label>
                                 <input class="star" style="visibility: hidden" id="radio1" name="reviewRadio" type="radio">
                                 <label for="radio2" class="star"><i id="reviewStar2" onclick="clickStar('reviewStar2')" style="color:var(--grey); font-size:30px" class="fa fa-star"></i></label>
