@@ -1,41 +1,56 @@
 package com.example.sping_portfolio.minilabs;
 
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.util.*;
+
 import java.util.Scanner;
 
-public class averger
-{
-    public static void main(String args[])
-    {
-        int marks[] = new int[6];
-        int i;
+@Controller
+public class averger {
+    @GetMapping("/averager")
+    public String alphabet() {
+        return "averager";
+    }
+
+    @PostMapping("/averager")
+    @ResponseBody
+    public String alphabetize(
+            @RequestParam String listInput
+    ) {
         float total=0, avg;
-        Scanner scanner = new Scanner(System.in);
 
+        String [] a = listInput.split(" ");
 
-        for(i=0; i<6; i++) {
-            System.out.print(" Rating(OUT OF 5)"+(i+1)+":");
-            marks[i] = scanner.nextInt();
-            total = total + marks[i];
+        for (String i : a) {
+            total = total + Integer.parseInt(i);
         }
-        scanner.close();
+
         //Average calculation here
         avg = total/6;
+        String message = "";
         System.out.print("Final rating: ");
         if(avg>=4.5)
         {
-            System.out.print("Awesome(EAT EAT EAT!)");
+            message = "Awesome! EAT EAT EAT!";
         }
         else if(avg>=4 && avg<3.5)
         {
-            System.out.print("Good(should try) ");
+            message="Good! You should try it!";
         }
         else if(avg>=3 && avg<3.9999)
         {
-            System.out.print("Decent(Average might wanna try)");
+            message = "Decent! You might wanna try!";
         }
         else
         {
-            System.out.print("Crap(dont eat, least popular)");
+            message = "Crap! Don't eat it, least popular!";
         }
+
+        return "Average: " + avg + "  //  " + message;
     }
 }

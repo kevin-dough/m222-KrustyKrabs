@@ -1,6 +1,5 @@
 package com.example.sping_portfolio.kevin;
 
-import com.example.sping_portfolio.controllers.Contact;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

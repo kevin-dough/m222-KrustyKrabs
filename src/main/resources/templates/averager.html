@@ -1,0 +1,37 @@
+<!-- This page is illustrative and contains ideas about HTML formatting -->
+<!DOCTYPE HTML>
+<!-- Signals to the Layout Dialect which layout should be used to decorate this View -->
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layout}" lang="en">
+
+<head>
+    <div layout:fragment="metadata" th:remove="tag">
+        <title>AVERAGER</title>
+    </div>
+</head>
+
+<!-- layout::fragment="content" is heart of ThymeLeaf layout -->
+<body style="z-index:0">
+<div layout:fragment="content" th:remove="tag">
+    <!-- Start of body content specific to page -->
+    <div style="padding-top:5%"></div>
+    <h1 class="pageTitle">AVERAGER</h1>
+    <div style="margin-top:150px;width:100%;z-index:2">
+        <div style="background-color:var(--pink); width:100%; height:60px"></div>
+        <div style="margin-top:10px; background-color:var(--blue); width:100%; height:60px"></div>
+    </div>
+    <div class="row justify-content-center freeWidthMenuCard"
+         style="width:530px;padding:30px 50px 10px 50px; position:relative; z-index:3; bottom:25%">
+        <form method="POST">
+            <textarea id="listInput" name="listInput" rows="8" cols="60"
+                      required>1 5 2 4 3 2 5 4 3 4 4 3 5 5 3 4 2 4 4 5 5 3 4 4 5 5 5</textarea>
+            <div style="text-align: center; padding-top:10px">
+                <p><input class="alphabetButton" type="submit" value="AVERAGE!"></p>
+            </div>
+        </form>
+    </div>
+    <!-- End of body content specific to page -->
+</div>
+</body>
+
+</html>
