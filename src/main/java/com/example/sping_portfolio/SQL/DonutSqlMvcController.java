@@ -24,11 +24,11 @@ public class DonutSqlMvcController implements WebMvcConfigurer {
     @Autowired
     private DonutSqlRepository repository;
 
-    @GetMapping("/sql/donut")
+    @GetMapping("/")
     public String donut(Model model) {
         List<Donut> list = repository.listAll();
         model.addAttribute("list", list);
-        return "sql/donut";
+        return "index";
     }
 
     /*  The HTML template Forms and donutForm attributes are bound
@@ -52,7 +52,7 @@ public class DonutSqlMvcController implements WebMvcConfigurer {
         }
         repository.save(donut);
         // Redirect to next step
-        return "redirect:/sql/donut";
+        return "redirect:/";
     }
 
     @GetMapping("/sql/donutupdate/{id}")
@@ -86,15 +86,15 @@ public class DonutSqlMvcController implements WebMvcConfigurer {
     /*
     GET List of People
      */
-    @RequestMapping(value = "/sql/people/get")
-    public ResponseEntity<List<Donut>> getPeople() {
+    @RequestMapping(value = "/get")
+    public ResponseEntity<List<Donut>> getDonuts() {
         return new ResponseEntity<>( repository.listAll(), HttpStatus.OK);
     }
 
     /*
     GET individual donut using ID
      */
-    @RequestMapping(value = "/sql/donut/get/{id}")
+    @RequestMapping(value = "/get/{id}")
     public ResponseEntity<Donut> getdonut(@PathVariable long id) {
         return new ResponseEntity<>( repository.get(id), HttpStatus.OK);
     }
@@ -102,7 +102,7 @@ public class DonutSqlMvcController implements WebMvcConfigurer {
     /*
     DELETE individual donut using ID
      */
-    @RequestMapping(value = "/sql/donut/delete/{id}", method = RequestMethod.DELETE)
+    @RequestMapping(value = "/delete/{id}", method = RequestMethod.DELETE)
     public ResponseEntity<Object> deletedonut(@PathVariable long id) {
         repository.delete(id);
         return new ResponseEntity<>( ""+ id +" deleted", HttpStatus.OK);
@@ -112,7 +112,7 @@ public class DonutSqlMvcController implements WebMvcConfigurer {
     /*
     POST Aa record by Requesting Parameters from URI
      */
-    @RequestMapping(value = "/sql/donut/post", method = RequestMethod.POST)
+    @RequestMapping(value = "/post", method = RequestMethod.POST)
     public ResponseEntity<Object> postdonut(@RequestParam("donuttype") String donuttype,
                                              @RequestParam("place") String place,
                                              @RequestParam("date") String dateString,
