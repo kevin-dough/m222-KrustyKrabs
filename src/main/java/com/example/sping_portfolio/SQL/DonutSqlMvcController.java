@@ -69,13 +69,13 @@ public class DonutSqlMvcController implements WebMvcConfigurer {
         }
         repository.save(donut);
         // Redirect to next step
-        return "redirect:/sql/donut";
+        return "redirect:index";
     }
 
     @GetMapping("/sql/donutdelete/{id}")
     public String donutDelete(@PathVariable("id") long id) {
         repository.delete(id);
-        return "redirect:/sql/donut";
+        return "redirect:index";
     }
 
     /*
