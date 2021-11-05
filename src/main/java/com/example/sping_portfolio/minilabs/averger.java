@@ -31,9 +31,9 @@ public class averger {
         }
 
         //Average calculation here
-        avg = total/6;
+        avg = total/a.length;
         String message = "";
-        System.out.print("Final rating: ");
+//        System.out.print("Final rating: ");
         if(avg>=4.5)
         {
             message = "Awesome! EAT EAT EAT!";
