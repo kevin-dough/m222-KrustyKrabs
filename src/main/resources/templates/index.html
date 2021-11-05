@@ -16,7 +16,7 @@
         <h1 style="padding-left:15px; padding-top:10px" class="listMenuTitle">FAN FAVORITES</h1>
         <div class="row flex-nowrap listMenu" style="overflow-wrap:normal;white-space:nowrap">
             <div class="listMenuCard row" style="margin-left:10px;margin-right:10px;">
-                <div style="padding-top:20px" th:each="donut : ${donut}">
+                <div style="padding-top:20px" th:each="donut : ${list}">
                     <p class="cardTitle" th:text="${donut.donuttype}"></p>
                     <div class="row">
                         <div th:stars="${donut.rating}"></div>

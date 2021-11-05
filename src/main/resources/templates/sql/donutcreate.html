@@ -46,20 +46,20 @@
                         <form action="#" th:action="@{/sql/donutcreate}" th:object="${donut}" method="POST">
                             <div class="stars" th:field="*{rating}">
                                 <label for="radio1" class="star"><i id="reviewStar1" onclick="clickStar('reviewStar1')" style="color:var(--grey); font-size:30px" class="fa fa-star"></i></label>
-                                <input class="star" style="visibility: hidden" id="radio1" name="reviewRadio" type="radio">
+                                <input class="star" style="visibility: hidden" id="radio1" name="ratingRadio" type="radio" value="1">
                                 <label for="radio2" class="star"><i id="reviewStar2" onclick="clickStar('reviewStar2')" style="color:var(--grey); font-size:30px" class="fa fa-star"></i></label>
-                                <input class="star" style="visibility: hidden" id="radio2" name="reviewRadio" type="radio">
+                                <input class="star" style="visibility: hidden" id="radio2" name="ratingRadio" type="radio" value="2">
                                 <label for="radio3" class="star"><i id="reviewStar3" onclick="clickStar('reviewStar3')" style="color:var(--grey); font-size:30px" class="fa fa-star"></i></label>
-                                <input class="star" style="visibility: hidden" id="radio3" name="reviewRadio" type="radio">
+                                <input class="star" style="visibility: hidden" id="radio3" name="ratingRadio" type="radio" value="3">
                                 <label for="radio4" class="star"><i id="reviewStar4" onclick="clickStar('reviewStar4')" style="color:var(--grey); font-size:30px" class="fa fa-star"></i></label>
-                                <input class="star" style="visibility: hidden" id="radio4" name="reviewRadio" type="radio">
+                                <input class="star" style="visibility: hidden" id="radio4" name="ratingRadio" type="radio" value="4">
                                 <label for="radio5" class="star"><i id="reviewStar5" onclick="clickStar('reviewStar5')" style="color:var(--grey); font-size:30px" class="fa fa-star"></i></label>
-                                <input class="star" style="visibility: hidden" id="radio5" name="reviewRadio" type="radio">
+                                <input class="star" style="visibility: hidden" id="radio5" name="ratingRadio" type="radio" value="5">
                             </div>
-                            <p style="padding-bottom:10px;"><input class="reviewInput" type="text" th:field="*{donuttype}" placeholder="donut name" size="53"></p>
-                            <p style="padding-bottom:10px;"><input class="reviewInput" type="text" th:field="*{place}" placeholder="Donut place!" size="53"></p>
-                            <p style="padding-bottom:10px;"><input class="reviewInput" type="date" th:field="*{date}"></p>
-                            <p style="padding-bottom:10px;"><input class="reviewInput" type="text" th:field="*{comment}" placeholder="Leave your thoughts here!" size="53"></p>
+                            <p style="padding-bottom:10px;"><input class="reviewInput" type="text" name="donuttype" th:field="*{donuttype}" placeholder="donut name" size="53"></p>
+                            <p style="padding-bottom:10px;"><input class="reviewInput" type="text" name="place" th:field="*{place}" placeholder="store name" size="53"></p>
+                            <p style="padding-bottom:10px;"><input class="reviewInput" type="date" name="date" th:field="*{date}"></p>
+                            <p style="padding-bottom:10px;"><input class="reviewInput" type="text" name="comment" th:field="*{comment}" placeholder="Leave your thoughts here!" size="53"></p>
                             <p><input class="reviewSubmit" style="width:455px" type="submit" value="SUBMIT"></p>
                         </form>
                     <script>

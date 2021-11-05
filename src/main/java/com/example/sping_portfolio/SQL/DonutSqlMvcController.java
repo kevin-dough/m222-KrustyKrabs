@@ -24,9 +24,10 @@ public class DonutSqlMvcController implements WebMvcConfigurer {
     @Autowired
     private DonutSqlRepository repository;
 
-    @GetMapping("/")
+    @GetMapping("/donutindex")
     public String donut(Model model) {
         List<Donut> list = repository.listAll();
+        System.out.println(list);
         model.addAttribute("list", list);
         return "index";
     }
@@ -116,16 +117,17 @@ public class DonutSqlMvcController implements WebMvcConfigurer {
     public ResponseEntity<Object> postdonut(@RequestParam("donuttype") String donuttype,
                                              @RequestParam("place") String place,
                                              @RequestParam("date") String dateString,
-                                             @RequestParam("rating") int rating,
+                                             @RequestParam("ratingRadio") String ratingInput,
                                              @RequestParam("comment") String comment ) {
         Date date;
+        System.out.println(ratingInput);
         try {
             date = new SimpleDateFormat("MM-dd-yyyy").parse(dateString);
         } catch (Exception e) {
             return new ResponseEntity<>(dateString +" error; try MM-dd-yyyy", HttpStatus.BAD_REQUEST);
         }
         // A donut object WITHOUT ID will create a new record
-        Donut donut = new Donut(donuttype, place, date, rating, comment);
+        Donut donut = new Donut(donuttype, place, date, ratingInput, comment);
         repository.save(donut);
         return new ResponseEntity<>(donuttype +" is created successfully", HttpStatus.CREATED);
     }
