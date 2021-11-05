@@ -44,19 +44,19 @@ public class Donut {
     private Date date;
 
     @NotNull
-    @Size(min = 1, max = 5, message = "Rate from 1 to 5!")
-    private int rating;
+    @Size(message = "Rate from 1 to 5!")
+    private String rating;
 
     @NotEmpty
     @Size(max = 500, message = "Limit is 500 words!")
     private String comment;
 
     /* Initializer used when setting data from an API */
-    public Donut(String donut, String place, Date date, int rating, String comment) {
+    public Donut(String donut, String place, Date date, String ratingInput, String comment) {
         this.donuttype = donut;
         this.place = place;
         this.date = date;
-        this.rating = rating;
+        this.rating = ratingInput;
         this.comment = comment;
     }
 
