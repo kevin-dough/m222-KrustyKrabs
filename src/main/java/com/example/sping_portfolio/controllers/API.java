@@ -40,8 +40,6 @@ public class API {
 
         model.addAttribute("tweets", tweets);
 
-
-
         return "api";
     }
 }
