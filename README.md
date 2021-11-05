@@ -6,7 +6,8 @@
 ### Description and Project Scope:
 Donut Dictionary is a Donut Rating Site which allows any users to view, search, and create reviews for donuts. Fan Favorites and the Least-Liked List are displayed on the home page to see the highest reviewed donuts and the worst reviewed donuts! You are able to not only score the donuts on a 5-star scale but also write comments that other users can see! The comments can be made anonymously or you can be names as well.
 
-
+### Using Donut Dictionary
+The front page will have the top 5 best and worst donuts in our database! Use the list of donuts to choose the individual donuts you would like to view. In the future, you will be able to search for donuts by name and tag. You will also be able to sort donuts alphabetically or by rating. Adding ratings is work in progress. We are currently working on making the data be sent to the database. You can also check out the Krispy Kreme Twitter API!
 
 ## Individual Finals (Part 1)
 ### [Link to Issue](https://github.com/kevin-dough/m222-KrustyKrabs/issues/32)
