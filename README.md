@@ -13,7 +13,7 @@ The front page will have the top 5 best and worst donuts in our database! Use th
 ## N@tM Presentation and Walkabouts
 |        Name        | Links |
 |:------------------:|--------|
-|Kevin| |
+|Kevin| [link!!](https://docs.google.com/document/d/1BFBWGY9vj-E2K7aB7S8AUBSUFzykGWVdO7xCJWG-ou0/edit#bookmark=id.ryzc64q6elzq) |
 |Ak| |
 |Eshaan| |
 |Navodit| |
