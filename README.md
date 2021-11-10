@@ -16,7 +16,7 @@ The front page will have the top 5 best and worst donuts in our database! Use th
 |Kevin| [link!!](https://docs.google.com/document/d/1BFBWGY9vj-E2K7aB7S8AUBSUFzykGWVdO7xCJWG-ou0/edit#bookmark=id.ryzc64q6elzq) |
 |Ak| |
 |Eshaan| |
-|Navodit| |
+|Navodit| [Navodit's N@TM Experience](https://docs.google.com/document/d/1BFBWGY9vj-E2K7aB7S8AUBSUFzykGWVdO7xCJWG-ou0/edit#bookmark=id.s5r2xl2z9vbj) |
 
 ## Individual Finals (Part 1)
 ### [Link to Issue](https://github.com/kevin-dough/m222-KrustyKrabs/issues/32)
