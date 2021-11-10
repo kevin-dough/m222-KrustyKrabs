@@ -10,6 +10,14 @@ Donut Dictionary is a Donut Rating Site which allows any users to view, search, 
 The front page will have the top 5 best and worst donuts in our database! Use the list of donuts to choose the individual donuts you would like to view. In the future, you will be able to search for donuts by name and tag. You will also be able to sort donuts alphabetically or by rating. Adding ratings is work in progress. We are currently working on making the data be sent to the database. You can also check out the Krispy Kreme Twitter API!
 #### [MORE INFO](https://docs.google.com/presentation/d/1ayH31O9OuA9_IVK5aykpLORbnx2FxRrtyvo8dSTN69k/edit?usp=sharing)
 
+## N@tM Presentation and Walkabouts
+|        Name        | Links |
+|:------------------:|--------|
+|Kevin| |
+|Ak| |
+|Eshaan| |
+|Navodit| |
+
 ## Individual Finals (Part 1)
 ### [Link to Issue](https://github.com/kevin-dough/m222-KrustyKrabs/issues/32)
 
