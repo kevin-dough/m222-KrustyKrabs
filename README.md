@@ -15,7 +15,7 @@ The front page will have the top 5 best and worst donuts in our database! Use th
 |:------------------:|--------|
 |Kevin| [link!!](https://docs.google.com/document/d/1BFBWGY9vj-E2K7aB7S8AUBSUFzykGWVdO7xCJWG-ou0/edit#bookmark=id.ryzc64q6elzq) |
 |Ak| [AK's N@TM Experience](https://docs.google.com/document/d/1_00m8_Ps-8xa50mRHRDDZVe1lTe19DJE-vb_fP_6JeY/edit?usp=sharing) |
-|Eshaan| |
+|Eshaan| [Eshaan's N@TM Experience](https://docs.google.com/document/d/1_00m8_Ps-8xa50mRHRDDZVe1lTe19DJE-vb_fP_6JeY/edit?usp=sharing) |
 |Navodit| [Navodit's N@TM Experience](https://docs.google.com/document/d/1BFBWGY9vj-E2K7aB7S8AUBSUFzykGWVdO7xCJWG-ou0/edit#bookmark=id.s5r2xl2z9vbj) |
 
 ## Individual Finals (Part 1)
